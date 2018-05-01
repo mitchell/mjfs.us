@@ -1,0 +1,52 @@
+.Navbar {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: rgb(59, 65, 82);
+  box-shadow: -1px 0 3px black;
+}
+
+.Navbar-Button {
+  background-color: rgb(126, 161, 187);
+  float: right;
+  border-radius: 2px;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+}
+
+.Navbar-Button:hover {
+  box-shadow: 2px 2px 2px black;
+}
+
+.Navbar-Menu {
+  width: 100%;
+  float: left;
+  padding: 0 20%;
+}
+
+.Navbar-Menu p {
+  border-radius: 2px;
+  display: block;
+  color: white;
+  float: left;
+  width: 23%;
+  background-color: grey;
+  padding: 5px;
+  margin: 1% 1%;
+}
+
+@media screen and ( max-width: 500px ) {
+  .Navbar-Menu {
+    padding: 0 5% 3px 5%;
+  }
+  .Navbar-Menu p {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+.Navbar-Menu p:hover {
+  box-shadow: 2px 2px 2px black;
+}

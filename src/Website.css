@@ -1,7 +1,5 @@
 .Website {
-  text-align: center
-}
-
-.Hello-World {
-  font-size: 1.5rem
+  display: flex;
+  justify-content: center;
+  color: white;
 }

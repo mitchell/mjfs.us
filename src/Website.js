@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import './Website.css';
+import React, { Component } from 'react'
+
+import Navbar from './components/Navbar/Navbar.js'
+
+import './Website.css'
 
 class Website extends Component {
-  render() {
+  render () {
     return (
-      <div className="Website">
-        <div className="Hello-World">
-          <p>Hello, my dudes.</p>
-        </div>
+      <div className='Website'>
+        <p>Hello, my dudes.</p>
+        <Navbar />
       </div>
-    );
+    )
   }
 }
 
-export default Website;
+export default Website
