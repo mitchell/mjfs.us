@@ -2,16 +2,16 @@
   display: flex;
   flex-flow: row wrap;
 }
+
 .ProjectsContainer div {
-  text-align: center;
-  padding: 5px;
-  margin: auto;
   flex: 1 0 100%;
-  max-width: 50%;
+  margin: auto;
+  max-width: 45%;
+  text-align: center;
 }
 
 @media screen and ( max-width: 500px ) {
   .ProjectsContainer div {
-    max-width: 100%;
+    max-width: 95%;
   }
 }

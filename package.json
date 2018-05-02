@@ -16,6 +16,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "csslint": "^1.0.5",
     "standard": "^11.0.1"
   }
 }

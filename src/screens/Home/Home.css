@@ -1,14 +1,13 @@
 .HomeContainer p {
   text-align: left;
-  display: block;
 }
 
 .HomeContainer img {
-  float: left;
+  border-radius: 3px;
   display: block;
-  width: 40%;
-  margin-right: 5px;
-  border-radius: 2px;
+  float: left;
+  margin-right: 1%;
+  width: 39%;
 }
 
 .signature {
@@ -19,8 +18,7 @@
 
 @media screen and ( max-width: 500px ) {
   .HomeContainer img {
-    width: 100%;
-    padding: 5%;
-    margin: auto;
+    margin: 5%;
+    width: 90%;
   }
 }
