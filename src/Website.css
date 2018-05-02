@@ -1,5 +1,21 @@
 .Website {
   display: flex;
   justify-content: center;
+  flex-flow: column nowrap;
   color: white;
+  margin-bottom: 15%;
+}
+
+.MainContainer {
+  max-width: 700px;
+  min-width: 60%;
+  margin: auto;
+  padding-bottom: 10%;
+  text-align: center;
+}
+
+@media screen and ( max-width: 500px ) {
+  .MainContainer {
+    width: 100%;
+  }
 }

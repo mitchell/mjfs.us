@@ -4,7 +4,7 @@
   right: 0px;
   left: 0px;
   background-color: rgb(59, 65, 82);
-  box-shadow: -1px 0 3px black;
+  box-shadow: -1px -1px 1px rgb(42, 46, 60);
 }
 
 .Navbar-Button {
@@ -17,7 +17,11 @@
 }
 
 .Navbar-Button:hover {
-  box-shadow: 2px 2px 2px black;
+  background-color: rgb(176, 211, 237);
+}
+
+.Navbar-Button:active {
+  box-shadow: 0 0 2px black inset;
 }
 
 .Navbar-Menu {
@@ -26,27 +30,32 @@
   padding: 0 20%;
 }
 
-.Navbar-Menu p {
+.Navbar-Menu div {
   border-radius: 2px;
-  display: block;
   color: white;
   float: left;
   width: 23%;
   background-color: grey;
   padding: 5px;
   margin: 1% 1%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and ( max-width: 500px ) {
   .Navbar-Menu {
     padding: 0 5% 3px 5%;
   }
-  .Navbar-Menu p {
+  .Navbar-Menu div {
     width: 100%;
     margin: 5px 0;
   }
 }
 
-.Navbar-Menu p:hover {
-  box-shadow: 2px 2px 2px black;
+.Navbar-Menu div:hover {
+  background-color: rgb(191, 191, 191);
+}
+
+.Active-Button div {
+  box-shadow: 0 0 2px black inset;
 }

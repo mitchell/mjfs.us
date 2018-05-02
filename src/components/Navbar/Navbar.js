@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-
 import ResponsiveMenu from 'react-responsive-navbar'
+import { NavLink } from 'react-router-dom'
 
 import './Navbar.css'
 
@@ -15,10 +15,10 @@ class Navbar extends Component {
         smallMenuClassName='Navbar'
         menu={
           <div className='Navbar-Menu'>
-            <p>Home</p>
-            <p>Projects</p>
-            <p>Experience</p>
-            <p>Contact</p>
+            <NavLink activeClassName='Active-Button' exact to='/'><div>Home</div></NavLink>
+            <NavLink activeClassName='Active-Button' to='/projects'><div>Projects</div></NavLink>
+            <NavLink activeClassName='Active-Button' to='/experience'><div>Experience</div></NavLink>
+            <NavLink activeClassName='Active-Button' to='/contact'><div>Contact</div></NavLink>
           </div>
         }
       />

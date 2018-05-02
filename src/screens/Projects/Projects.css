@@ -1,0 +1,17 @@
+.ProjectsContainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+.ProjectsContainer div {
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  flex: 1 0 100%;
+  max-width: 50%;
+}
+
+@media screen and ( max-width: 500px ) {
+  .ProjectsContainer div {
+    max-width: 100%;
+  }
+}
