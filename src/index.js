@@ -10,6 +10,6 @@ ReactDOM.render((
   <BrowserRouter>
     <Website />
   </BrowserRouter>
-  ), document.getElementById('root')
+), document.getElementById('root')
 )
 registerServiceWorker()

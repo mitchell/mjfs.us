@@ -1,22 +1,21 @@
 import React, { PureComponent } from 'react'
 
-import './Home.css'
+import './index.css'
 import profile from '../../images/profile.jpg'
 
 class Home extends PureComponent {
   render () {
     return (
-      <div className='HomeContainer'>
+      <div className='home-container'>
         <img src={profile} alt='Profile' />
         <p>Hello and welcome,</p>
         <p>
-          My name is Mitchell Simon. I am a Computer Science major at Loyola
-          Marymount University, Backend Software Developer at Hypremium, and I
-          offer my skills as a freelance web developer, and freelance
-          software/application developer.
+          My name is Mitchell Simon. I am a DevOps & Software Engineer at
+          Hypremium, Computer Science major at Loyola Marymount University, and
+          I offer my skills as a consulting web & software developer.
         </p>
         <p>
-          My academic interests include full stack web development (with an
+          My professional interests include full-stack web development (with an
           emphasis on backend), system administration, network architecture,
           software engineering, cybersecurity, and business administration. My
           personal interests include music performance, skiing, and politics.

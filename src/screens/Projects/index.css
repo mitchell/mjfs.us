@@ -1,0 +1,16 @@
+.projects-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.projects-container div {
+  flex: 1 0 45%;
+  margin: 2.5%;
+  text-align: center;
+}
+
+@media screen and ( max-width: 500px ) {
+  .projects-container div {
+    flex: 1 0 95%;
+  }
+}

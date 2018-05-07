@@ -1,11 +1,11 @@
-.Website {
+.website {
   color: white;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
 }
 
-.MainContainer {
+.main-container {
   margin: auto;
   margin-bottom: 50px;
   max-width: 700px;
@@ -14,7 +14,7 @@
 }
 
 @media screen and ( max-width: 500px ) {
-  .MainContainer {
+  .main-container {
     width: 100%;
   }
 }

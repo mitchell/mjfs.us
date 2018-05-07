@@ -1,25 +1,34 @@
 import React, { PureComponent } from 'react'
 
-import ClearButton from '../../components/ClearButton/ClearButton.js'
+import ClearButton from '../../components/ClearButton'
 
-import './Projects.css'
+import './index.css'
 
 class Projects extends PureComponent {
   render () {
     return (
-      <div className='ProjectsContainer'>
+      <div className='projects-container'>
         <div>
           <h4>www.mitchelljfsimon.com</h4>
           <p>
             This website has taken many forms over the years, as my frontend
-            and design skills increase. It started as a simple static site
-            using HTML, CSS, and a little bit of Javascript. Then it became
-            simple web app using Ruby and the Sinatra framework. Currently it
-            takes the form of a React.js app. This may be considered over-kill,
-            but I believe React.js (and other similar frontend frameworks) can
-            be used to make even the simplest projects modular and extensible.
+            and design skills increase. It has been simple HTML, CSS, and JS,
+            and a Ruby Sinatra web app. Currently it takes the form of a
+            React.js app. I enjoy React.js (and other similar frontend frameworks)
+            can be used to make even the simplest projects modular and extensible.
           </p>
           <ClearButton href='https://github.com/mitchelljfs/react-website'>Repository</ClearButton>
+        </div>
+        <div>
+          <h4>destinate</h4>
+          <p>
+            Destinate is react-native, iOS and Android app. Its main objective
+            is to suggest places or activities to the user based on there past
+            choices. It utilizes a Serverless Framework backend, written in Go
+            and hosted on AWS. It is still under-development, as a side-project
+            of Arash Lari and I.
+          </p>
+          <ClearButton href='https://github.com/mitchelljfs/destinate'>Repository</ClearButton>
         </div>
         <div>
           <h4>memebank API</h4>
@@ -36,12 +45,9 @@ class Projects extends PureComponent {
           <h4>reddit Neo4J Database</h4>
           <p>
             A learning Neo4j database project of a sample of comments on the
-            popular social media platform Reddit. A possible prototype database
-            for Reddit to run on Neo4j. It can show the relationships between
+            popular social media platform Reddit. It can show the relationships between
             users, their comments, and subreddits. With this information we can
-            infer demographic information about reddits users. For example we
-            could see which subreddits have the same users who post comments,
-            and where else they post.
+            infer demographic information about reddit's users.
           </p>
           <ClearButton href='https://github.com/mitchelljfs/comment_context_analysis'>Repository</ClearButton>
         </div>

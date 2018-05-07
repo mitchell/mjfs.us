@@ -1,11 +1,11 @@
 import React, { PureComponent } from 'react'
 
-import './ClearButton.css'
+import './index.css'
 
 class ClearButton extends PureComponent {
   render () {
     return (
-      <a className='clearButton' href={this.props.href}>{this.props.children}</a>
+      <a className='clear-button' href={this.props.href}>{this.props.children}</a>
     )
   }
 }

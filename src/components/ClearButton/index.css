@@ -1,0 +1,17 @@
+.clear-button, .clear-button:link, .clear-button:visited {
+  border: 2px solid rgb(59, 65, 82);
+  border-radius: 2px;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s, box-shadow 0.1s;
+}
+
+.clear-button:hover {
+  background-color: rgb(59, 65, 82);
+}
+
+.clear-button:active {
+  box-shadow: 0 0 5px rgb(46, 51, 64) inset;
+}
