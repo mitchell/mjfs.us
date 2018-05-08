@@ -1,9 +1,9 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 
 import './index.css'
 import profile from '../../images/profile.jpg'
 
-class Home extends PureComponent {
+class Home extends React.PureComponent {
   render () {
     return (
       <div className='home-container'>

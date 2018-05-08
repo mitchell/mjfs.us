@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ResponsiveMenu from 'react-responsive-navbar'
 import { NavLink } from 'react-router-dom'
 
 import './index.css'
 
-class Navbar extends Component {
+class Navbar extends React.Component {
   render () {
     return (
       <ResponsiveMenu

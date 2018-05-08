@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
 import Header from './components/Header'
@@ -8,7 +8,7 @@ import Projects from './screens/Projects'
 
 import './Website.css'
 
-class Website extends Component {
+class Website extends React.Component {
   render () {
     return (
       <div className='website'>

@@ -1,10 +1,10 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 
 import SmallText from '../SmallText'
 
 import './index.css'
 
-class Header extends PureComponent {
+class Header extends React.PureComponent {
   render () {
     return (
       <div className='header-container'>

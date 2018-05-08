@@ -1,10 +1,10 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 
 import ClearButton from '../../components/ClearButton'
 
 import './index.css'
 
-class Projects extends PureComponent {
+class Projects extends React.PureComponent {
   render () {
     return (
       <div className='projects-container'>
