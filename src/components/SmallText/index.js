@@ -6,7 +6,7 @@ import './index.css'
 class SmallText extends React.PureComponent {
   render () {
     return (
-      <p className='small-text'>{this.props.children}</p>
+      <div className='small-text'>{this.props.children}</div>
     )
   }
 }

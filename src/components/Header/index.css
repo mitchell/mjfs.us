@@ -1,9 +1,13 @@
 .header-container {
-  border-bottom: 2px solid rgb(22, 26, 40);
+  border-bottom: 2px solid rgb(130, 160, 196);
   margin: auto;
   margin-bottom: -5px;
   width: 65%;
 }
 .header-container h2 {
   margin-bottom: -5px;
+}
+
+.header-container div {
+  margin: 2%;
 }

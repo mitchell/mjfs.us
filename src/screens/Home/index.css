@@ -7,13 +7,13 @@
   display: block;
   float: left;
   margin-right: 1%;
-  width: 39%;
+  width: 37%;
 }
 
 .signature {
   float: right;
   font-style: italic;
-  margin-right: 10%;
+  margin-right: 3%;
 }
 
 @media screen and ( max-width: 500px ) {

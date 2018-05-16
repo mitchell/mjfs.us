@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Navbar from './components/Navbar'
 import Home from './screens/Home'
 import Projects from './screens/Projects'
+import Experience from './screens/Experience'
 
 import './Website.css'
 
@@ -17,7 +18,7 @@ class Website extends React.Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/projects' component={Projects} />
-            <Route path='/experience' component={null} />
+            <Route path='/experience' component={Experience} />
             <Route path='/contact' component={null} />
           </Switch>
           <Navbar />

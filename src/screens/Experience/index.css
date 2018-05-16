@@ -1,0 +1,37 @@
+.experience-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2% 0;
+}
+
+.experience-container > div {
+  border-bottom: 2px solid rgb(139, 191, 209);
+  flex: 1 0 90%;
+  font-size: 0.9rem;
+  margin: auto 5%;
+  text-align: left;
+}
+
+.experience-company {
+  color: rgb(216, 221, 234);
+}
+
+.experience-title {
+  font-size: 1.2rem;
+  margin-top: 2%;
+}
+
+.small-text {
+  margin-bottom: 1%;
+}
+
+.experience-container ul {
+  margin-top: 0;
+}
+
+@media screen and ( max-width: 500px ) {
+  .experience-container>div {
+    flex: 1 0 100%;
+    margin: auto;
+  }
+}

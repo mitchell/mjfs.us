@@ -14,19 +14,20 @@ class Projects extends React.PureComponent {
             This website has taken many forms over the years, as my frontend
             and design skills increase. It has been simple HTML, CSS, and JS,
             and a Ruby Sinatra web app. Currently it takes the form of a
-            React.js app. I enjoy React.js (and other similar frontend frameworks)
-            can be used to make even the simplest projects modular and extensible.
+            React.js app. I enjoy React.js (and similar frontend frameworks)
+            as they can be used to make even the simplest projects modular and
+            extensible.
           </p>
           <ClearButton href='https://github.com/mitchelljfs/react-website'>Repository</ClearButton>
         </div>
         <div>
           <h4>destinate</h4>
           <p>
-            Destinate is react-native, iOS and Android app. Its main objective
-            is to suggest places or activities to the user based on there past
-            choices. It utilizes a Serverless Framework backend, written in Go
-            and hosted on AWS. It is still under-development, as a side-project
-            of Arash Lari and I.
+            Destinate is a react-native, iOS (and Android) app. Its main objective
+            is to suggest places or activities to the user based on their past
+            choices. It utilizes a serverless backend, written in Go and hosted
+            on AWS API Gateway/Lambda. It is still under development, as a side
+            project of Arash Lari and I.
           </p>
           <ClearButton href='https://github.com/mitchelljfs/destinate'>Repository</ClearButton>
         </div>

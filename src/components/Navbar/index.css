@@ -1,24 +1,20 @@
 .navbar {
-  background-color: rgb(59, 65, 82);
-  bottom: 0;
+  background-color: rgb(59, 65, 83);
   box-shadow: -1px -1px 1px rgb(42, 46, 60);
   left: 0;
   position: fixed;
   right: 0;
+  top: 0;
 }
 
 .navbar-button {
-  background-color: rgb(126, 161, 187);
+  background-color: rgb(139, 191, 209);
   border-radius: 2px;
   color: white;
   float: right;
   margin: 5px;
-  padding: 2px 5px;
+  padding: 5px 10px;
   transition: background-color 0.2s, box-shadow 0.1s;
-}
-
-.navbar-button:hover {
-  background-color: rgb(176, 211, 237);
 }
 
 .navbar-button:active {
@@ -34,26 +30,12 @@
   border-radius: 3px;
   color: white;
   float: left;
-  margin: 1% 1%;
+  margin: 1% 2.5%;
   overflow: hidden;
   padding: 5px 0;
   text-overflow: ellipsis;
   transition: background-color 0.2s, box-shadow 0.1s;
-  width: 23%;
-}
-
-@media screen and ( max-width: 500px ) {
-  .navbar {
-    padding-bottom: 5px;
-  }
-  .navbar-menu {
-    margin: 5%;
-    width: 90%;
-  }
-  .navbar-menu div {
-    margin: 5px 0;
-    width: 100%;
-  }
+  width: 20%;
 }
 
 .navbar-menu div:hover {
@@ -61,5 +43,35 @@
 }
 
 .active-button div {
-  box-shadow: 0 0 5px rgb(22, 26, 40) inset;
+  background-color: rgb(130, 160, 196);
+  box-shadow: 0 0 5px rgb(59, 64, 83) inset;
+}
+
+.active-button div:hover {
+  background-color: rgb(139, 191, 209);
+}
+
+@media screen and ( max-width: 500px ) {
+  .navbar {
+    bottom: 0;
+    padding-bottom: 5px;
+    top: auto;
+  }
+
+  .navbar-menu {
+    margin: 10%;
+    width: 80%;
+  }
+  .navbar-menu div {
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  .navbar-menu div:hover {
+    background-color: inherit;
+  }
+  
+  .active-button div:hover {
+    background-color: rgb(130, 160, 196);
+  }
 }
