@@ -11,7 +11,7 @@ class Navbar extends React.Component {
     return (
       <ResponsiveMenu
         menuOpenButton={<div className='navbar-button'><FontAwesomeIcon icon={faBars} /></div>}
-        menuCloseButton={<div className='navbar-button'><FontAwesomeIcon icon={faBars} /></div>}
+        menuCloseButton={<div className='navbar-button navbar-button-close'><FontAwesomeIcon icon={faBars} /></div>}
         changeMenuOn='500px'
         largeMenuClassName='navbar'
         smallMenuClassName='navbar'

@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Home from './screens/Home'
 import Projects from './screens/Projects'
 import Experience from './screens/Experience'
+import Contact from './screens/Contact'
 
 import './Website.css'
 
@@ -19,7 +20,7 @@ class Website extends React.Component {
             <Route exact path='/' component={Home} />
             <Route path='/projects' component={Projects} />
             <Route path='/experience' component={Experience} />
-            <Route path='/contact' component={null} />
+            <Route path='/contact' component={Contact} />
           </Switch>
           <Navbar />
         </div>

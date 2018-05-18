@@ -11,9 +11,9 @@ class Home extends React.PureComponent {
         <p>Hello and welcome,</p>
         <p>
           My name is Mitchell Simon. I am the Lead Backend Engineer at
-          Hypremium, where I architect and maintain our servlerless arcitecture,
+          Hypremium, where I lead the architecture of and maintain our serverless,
           Golang backend. I also offer my skills as a consulting/independent
-          web & software developer.
+          web & cloud developer.
         </p>
         <p>
           My professional interests include web development (with an

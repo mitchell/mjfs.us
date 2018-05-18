@@ -23,7 +23,7 @@ class Projects extends React.PureComponent {
         <div>
           <h4>destinate</h4>
           <p>
-            Destinate is a react-native, iOS (and Android) app. Its main objective
+            destinate is a react-native, iOS (and Android) app. Its main objective
             is to suggest places or activities to the user based on their past
             choices. It utilizes a serverless backend, written in Go and hosted
             on AWS API Gateway/Lambda. It is still under development, as a side

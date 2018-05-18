@@ -12,8 +12,8 @@ class Experience extends React.PureComponent {
           <div className='experience-company'>Hypremium.</div>
           <SmallText className='experience-smalltext'>May 2018 - Present</SmallText>
           <ul>
-            <li>Architect all new backend microservices, using Serverless, AWS API Gateway/Lambda, and Golang.</li>
-            <li>Lead backend development team.</li>
+            <li>Architect all new backend microservices using Serverless, AWS API Gateway/Lambda/more, and Golang.</li>
+            <li>Lead backend development team in an Agile (scrumban) environment.</li>
             <li>Monitor and maintain all stages of hosted microservices.</li>
           </ul>
         </div>
