@@ -9,7 +9,7 @@ class Projects extends React.PureComponent {
     return (
       <div className='projects-container'>
         <div>
-          <h4>www.mitchelljfsimon.com</h4>
+          <h4>mjfs.us</h4>
           <p>
             This website has taken many forms over the years, as my frontend
             and design skills increase. It has been simple HTML, CSS, and JS,
