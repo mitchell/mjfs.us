@@ -16,7 +16,7 @@
   margin-right: 3%;
 }
 
-@media screen and ( max-width: 500px ) {
+@media screen and (max-width: 500px) {
   .home-container img {
     margin: 5%;
     width: 90%;

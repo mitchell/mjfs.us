@@ -1,5 +1,5 @@
 # Personal Website
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 This is my personal website built using React.js. It is hosted in multiple
 locations around the US, Canada, and Europe thanks to AWS CloudFront and S3.

@@ -1,12 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
-import './index.css'
+import "./index.css"
 
 class ClearButton extends React.PureComponent {
-  render () {
+  render() {
     return (
-      <a className='clear-button' href={this.props.href}>{this.props.children}</a>
+      <a className="clear-button" href={this.props.href}>
+        {this.props.children}
+      </a>
     )
   }
 }
