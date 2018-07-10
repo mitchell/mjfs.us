@@ -9,11 +9,11 @@
   margin: auto;
   margin-top: 50px;
   max-width: 500px;
-  min-width: 60%;
+  min-width: 50%;
   text-align: center;
 }
 
-@media screen and ( max-width: 500px ) {
+@media screen and (max-width: 500px) {
   .main-container {
     margin-bottom: 50px;
     margin-top: auto;

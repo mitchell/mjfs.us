@@ -26,8 +26,8 @@
 }
 
 .navbar-menu {
-  margin: 0 18.75%;
-  width: 62.5%;
+  margin: 0 23.75%;
+  width: 52.5%;
 }
 
 .navbar-menu div {
@@ -55,7 +55,7 @@
   background-color: rgb(139, 191, 209);
 }
 
-@media screen and ( max-width: 500px ) {
+@media screen and (max-width: 500px) {
   .navbar {
     bottom: 0;
     padding-bottom: 5px;
@@ -71,11 +71,11 @@
     padding: 5px 0;
     width: 100%;
   }
-  
+
   .navbar-menu div:hover {
     background-color: inherit;
   }
-  
+
   .active-button div:hover {
     background-color: rgb(130, 160, 196);
   }
