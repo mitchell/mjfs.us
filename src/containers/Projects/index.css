@@ -19,8 +19,7 @@
   margin-top: 3%;
 }
 
-
-@media screen and ( max-width: 500px ) {
+@media screen and (max-width: 500px) {
   .projects-container div {
     flex: 1 0 95%;
   }

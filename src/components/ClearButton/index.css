@@ -1,4 +1,6 @@
-.clear-button, .clear-button:link, .clear-button:visited {
+.clear-button,
+.clear-button:link,
+.clear-button:visited {
   border: 2px solid rgb(59, 65, 82);
   border-radius: 2px;
   color: white;

@@ -1,6 +1,6 @@
 {
   "name": "react-website",
-  "version": "0.2.15",
+  "version": "0.2.16",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",

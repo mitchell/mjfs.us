@@ -29,8 +29,8 @@
   margin-top: 0;
 }
 
-@media screen and ( max-width: 500px ) {
-  .experience-container>div {
+@media screen and (max-width: 500px) {
+  .experience-container > div {
     flex: 1 0 100%;
     margin: auto;
   }
