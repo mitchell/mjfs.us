@@ -1,10 +1,13 @@
+// @flow
 import React from "react"
 
 import ClearButton from "../../components/ClearButton"
 
 import "./index.css"
 
-class Projects extends React.PureComponent {
+type Props = {}
+
+class Projects extends React.PureComponent<Props> {
   render() {
     return (
       <div className="projects-container">

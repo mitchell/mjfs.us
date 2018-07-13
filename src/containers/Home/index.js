@@ -1,9 +1,12 @@
+// @flow
 import React from "react"
 
 import "./index.css"
 import profile from "../../images/profile.jpg"
 
-class Home extends React.PureComponent {
+type Props = {}
+
+class Home extends React.PureComponent<Props> {
   render() {
     return (
       <div className="home-container">

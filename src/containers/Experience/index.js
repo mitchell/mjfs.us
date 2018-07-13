@@ -1,9 +1,12 @@
+// @flow
 import React from "react"
 
 import SmallText from "../../components/SmallText"
 import "./index.css"
 
-class Experience extends React.PureComponent {
+type Props = {}
+
+class Experience extends React.PureComponent<Props> {
   render() {
     return (
       <div className="experience-container">

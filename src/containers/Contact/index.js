@@ -1,9 +1,12 @@
+// @flow
 import React from "react"
 
 import "./index.css"
 import linkedIn from "../../images/In-2C-128px-TM.png"
 
-class Contact extends React.PureComponent {
+type Props = {}
+
+class Contact extends React.PureComponent<Props> {
   render() {
     return (
       <div className="contact-container">

@@ -1,3 +1,4 @@
+// @flow
 import React from "react"
 import { Route, Switch } from "react-router-dom"
 
@@ -10,7 +11,9 @@ import Contact from "./containers/Contact"
 
 import "./Website.css"
 
-class Website extends React.Component {
+type Props = {}
+
+class Website extends React.Component<Props> {
   render() {
     return (
       <div className="website">

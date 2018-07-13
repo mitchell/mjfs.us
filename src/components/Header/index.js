@@ -1,10 +1,13 @@
+// @flow
 import React from "react"
 
 import SmallText from "../SmallText"
 
 import "./index.css"
 
-class Header extends React.PureComponent {
+type Props = {}
+
+class Header extends React.PureComponent<Props> {
   render() {
     return (
       <div className="header-container">

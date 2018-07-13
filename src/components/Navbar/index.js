@@ -1,3 +1,4 @@
+// @flow
 import React from "react"
 import ResponsiveMenu from "react-responsive-navbar"
 import { NavLink } from "react-router-dom"
@@ -6,7 +7,9 @@ import faBars from "@fortawesome/fontawesome-free-solid/faBars"
 
 import "./index.css"
 
-class Navbar extends React.Component {
+type Props = {}
+
+class Navbar extends React.Component<Props> {
   render() {
     return (
       <ResponsiveMenu

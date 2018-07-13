@@ -1,9 +1,14 @@
+// @flow
 import React from "react"
-import PropTypes from "prop-types"
 
 import "./index.css"
 
-class ClearButton extends React.PureComponent {
+type Props = {
+  href: string,
+  children: string
+}
+
+class ClearButton extends React.PureComponent<Props> {
   render() {
     return (
       <a className="clear-button" href={this.props.href}>
@@ -11,11 +16,6 @@ class ClearButton extends React.PureComponent {
       </a>
     )
   }
-}
-
-ClearButton.propTypes = {
-  href: PropTypes.string,
-  children: PropTypes.string
 }
 
 export default ClearButton
