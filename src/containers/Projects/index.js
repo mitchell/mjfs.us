@@ -25,6 +25,19 @@ class Projects extends React.PureComponent<Props> {
           </ClearButton>
         </div>
         <div>
+          <h4>lambdarouter</h4>
+          <p>
+            This package will become a fully featured AWS Lambda function
+            router, able to respond to HTTP, Schedule, Cognito, and SNS events.
+            It will also support middleware interfacing. So far it includes
+            functionality for API Gateway. Check out the GoDoc Reference to see
+            how to instantiate a router and create endpoints.
+          </p>
+          <ClearButton href="https://github.com/mitchelljfs/lambdarouter">
+            Repository
+          </ClearButton>
+        </div>
+        <div>
           <h4>destinate</h4>
           <p>
             destinate is a react-native, iOS (and Android) app. Its main
@@ -38,27 +51,15 @@ class Projects extends React.PureComponent<Props> {
           </ClearButton>
         </div>
         <div>
-          <h4>memebank API</h4>
+          <h4>sys-mgmt</h4>
           <p>
-            This is a RESTful API using the Rails framework to support the front
-            end application of memebank. It uses JWT authentication for
-            stateless account authentication, and bcrypt for password
-            encryption. It communicates with the front-end using basic HTTP
-            requests and JSON objects.
+            A minimal, cross-platform, unix-like-system management program. This
+            program is designed to detect which programs are affiliated with the
+            unix-like system, whether it be Debian or macOS. There are various
+            shortcuts to common unix-like commands, such as update and upgrade
+            (for package managers), another is poweroff or reboot.
           </p>
-          <ClearButton href="https://github.com/aherco/memebank-api">
-            Repository
-          </ClearButton>
-        </div>
-        <div>
-          <h4>reddit Neo4J Database</h4>
-          <p>
-            A learning Neo4j database project of a sample of comments on the
-            popular social media platform Reddit. It can show the relationships
-            between users, their comments, and subreddits. With this information
-            we can infer demographic information about reddit's users.
-          </p>
-          <ClearButton href="https://github.com/mitchelljfs/comment_context_analysis">
+          <ClearButton href="https://github.com/mitchelljfs/sys-mgmt">
             Repository
           </ClearButton>
         </div>
