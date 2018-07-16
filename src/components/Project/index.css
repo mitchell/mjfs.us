@@ -1,0 +1,21 @@
+.project-container {
+  border-bottom: 2px solid rgb(139, 191, 209);
+  flex: 1 0 45%;
+  margin: 2.5%;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.project-container h4 {
+  margin-bottom: 0;
+}
+
+.project-container p {
+  margin-top: 3%;
+}
+
+@media screen and (max-width: 500px) {
+  .project-container {
+    flex: 1 0 95%;
+  }
+}

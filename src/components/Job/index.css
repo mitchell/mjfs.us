@@ -1,0 +1,31 @@
+.job-container {
+  border-bottom: 2px solid rgb(139, 191, 209);
+  flex: 1 0 90%;
+  font-size: 0.9rem;
+  margin: auto 5%;
+  text-align: left;
+}
+
+.job-company {
+  color: rgb(216, 221, 234);
+}
+
+.job-title {
+  font-size: 1.2rem;
+  margin-top: 2%;
+}
+
+.small-text {
+  margin-bottom: 1%;
+}
+
+.job-container ul {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .job-container {
+    flex: 1 0 100%;
+    margin: auto;
+  }
+}
