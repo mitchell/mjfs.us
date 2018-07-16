@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+  - "10"
+
+before_install:
+  - "sh ./travis_credential_setup.sh"
+
+install:
+  - "npm install"
+  - "pip install awscli --user"
+
+script:
+  - "npm run build"
+  - "aws s3 sync ./build/ s3://mjfsus --acl public-read"
+  - "aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION_ID --paths /*"
