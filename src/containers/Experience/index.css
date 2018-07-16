@@ -1,6 +1,6 @@
 .experience-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   margin: 2% 0;
 }
 

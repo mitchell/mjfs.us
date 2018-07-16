@@ -7,6 +7,12 @@
   top: 0;
 }
 
+.navbar-small {
+  bottom: 0;
+  padding-bottom: 5px;
+  top: auto;
+}
+
 .navbar-button {
   background-color: rgb(139, 191, 209);
   border-radius: 2px;
@@ -30,53 +36,48 @@
   width: 52.5%;
 }
 
-.navbar-menu div {
+.navbar-menu-button {
   border-radius: 3px;
   color: white;
   float: left;
   margin: 1% 2.5%;
   overflow: hidden;
   padding: 7px 0;
+  text-decoration: none;
   text-overflow: ellipsis;
   transition: background-color 0.2s, box-shadow 0.1s;
   width: 20%;
 }
 
-.navbar-menu div:hover {
+.navbar-menu-button:hover {
   background-color: rgb(86, 95, 118);
 }
 
-.active-button div {
+.active-button {
   background-color: rgb(130, 160, 196);
   box-shadow: 0 0 5px rgb(59, 64, 83) inset;
 }
 
-.active-button div:hover {
+.active-button:hover {
   background-color: rgb(139, 191, 209);
 }
 
 @media screen and (max-width: 500px) {
-  .navbar {
-    bottom: 0;
-    padding-bottom: 5px;
-    top: auto;
-  }
-
   .navbar-menu {
     margin: auto;
     width: 75%;
   }
-  .navbar-menu div {
+  .navbar-menu-button {
     margin: 5px 0;
     padding: 5px 0;
     width: 100%;
   }
 
-  .navbar-menu div:hover {
+  .navbar-menu-button:hover {
     background-color: inherit;
   }
 
-  .active-button div:hover {
+  .active-button:hover {
     background-color: rgb(130, 160, 196);
   }
 }

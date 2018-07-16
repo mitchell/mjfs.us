@@ -25,20 +25,37 @@ class Navbar extends React.Component<Props> {
         }
         changeMenuOn="500px"
         largeMenuClassName="navbar"
-        smallMenuClassName="navbar"
+        smallMenuClassName="navbar navbar-small"
         menu={
           <div className="navbar-menu">
-            <NavLink activeClassName="active-button" exact to="/">
-              <div>Home</div>
+            <NavLink
+              className="navbar-menu-button"
+              activeClassName="active-button"
+              exact
+              to="/"
+            >
+              Home
             </NavLink>
-            <NavLink activeClassName="active-button" to="/projects">
-              <div>Projects</div>
+            <NavLink
+              className="navbar-menu-button"
+              activeClassName="active-button"
+              to="/projects"
+            >
+              Projects
             </NavLink>
-            <NavLink activeClassName="active-button" to="/experience">
-              <div>Experience</div>
+            <NavLink
+              className="navbar-menu-button"
+              activeClassName="active-button"
+              to="/experience"
+            >
+              Experience
             </NavLink>
-            <NavLink activeClassName="active-button" to="/contact">
-              <div>Contact</div>
+            <NavLink
+              className="navbar-menu-button"
+              activeClassName="active-button"
+              to="/contact"
+            >
+              Contact
             </NavLink>
           </div>
         }
