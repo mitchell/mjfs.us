@@ -17,6 +17,12 @@ class Routes extends React.Component<Props> {
         <Route path="/projects" component={Projects} />
         <Route path="/experience" component={Experience} />
         <Route path="/contact" component={Contact} />
+        <Route
+          path="/linkedin"
+          render={() =>
+            (window.location = "https://linkedin.com/in/mitchelljfsimon")
+          }
+        />
       </Switch>
     )
   }
