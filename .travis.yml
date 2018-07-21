@@ -12,7 +12,11 @@ install:
 
 script:
   - "npm run build"
-  - "aws s3 sync ./build/ s3://mjfs.us --acl public-read"
+
+deploy:
+  - "aws s3 sync ./build/ s3://mjfs.us --acl public-read --delete"
+
+after_deploy:
   - >
     aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION_ID --paths
     /asset-manifest.json /favicon.ico /index.html /manifest.json /service-worker.js
