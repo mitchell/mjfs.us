@@ -8,15 +8,16 @@
 .main-container {
   margin: auto;
   margin-top: 50px;
-  max-width: 500px;
-  min-width: 50%;
+  min-width: 800px;
+  width: 50%;
   text-align: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .main-container {
     margin-bottom: 50px;
     margin-top: auto;
+    min-width: 0;
     width: 100%;
   }
 }

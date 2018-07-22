@@ -7,12 +7,6 @@
   top: 0;
 }
 
-.navbar-small {
-  bottom: 0;
-  padding-bottom: 5px;
-  top: auto;
-}
-
 .navbar-button {
   background-color: rgb(139, 191, 209);
   border-radius: 2px;
@@ -23,7 +17,7 @@
   transition: box-shadow 0.1s;
 }
 
-.navbar-button-close {
+.navbar-button-closed {
   background-color: rgb(173, 184, 209);
 }
 
@@ -32,7 +26,8 @@
 }
 
 .navbar-menu {
-  margin: 0 23.75%;
+  margin: auto;
+  min-width: 840px;
   width: 52.5%;
 }
 
@@ -62,9 +57,16 @@
   background-color: rgb(139, 191, 209);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
+  .navbar {
+    bottom: 0;
+    padding-bottom: 5px;
+    top: auto;
+  }
+
   .navbar-menu {
     margin: auto;
+    min-width: 0;
     width: 75%;
   }
   .navbar-menu-button {

@@ -1,6 +1,5 @@
 // @flow
 import React from "react"
-import ResponsiveMenu from "react-responsive-navbar"
 import { NavLink } from "react-router-dom"
 import FontAwesomeIcon from "@fortawesome/react-fontawesome"
 import faBars from "@fortawesome/fontawesome-free-solid/faBars"
@@ -9,30 +8,60 @@ import "./index.css"
 
 type Props = {}
 
-class Navbar extends React.Component<Props> {
+type State = {
+  showMenu: boolean
+}
+
+class Navbar extends React.Component<Props, State> {
+  static defaultProps: Props
+  changeMenu: number
+
+  constructor(props: Props) {
+    super(props)
+    this.changeMenu = 800
+
+    if (window.innerWidth <= this.changeMenu) {
+      this.state = { showMenu: false }
+    } else {
+      this.state = { showMenu: true }
+    }
+  }
+
+  toggleMenu = () => {
+    if (window.innerWidth <= this.changeMenu || !this.state.showMenu) {
+      this.setState(prev => ({ showMenu: !prev.showMenu }))
+    }
+  }
+
   render() {
+    let menuButton = null
+
+    if (window.innerWidth <= this.changeMenu) {
+      menuButton = (
+        <div
+          className={
+            this.state.showMenu
+              ? "navbar-button navbar-button-closed"
+              : "navbar-button"
+          }
+          onClick={this.toggleMenu}
+        >
+          <FontAwesomeIcon icon={faBars} />
+        </div>
+      )
+    }
+
     return (
-      <ResponsiveMenu
-        menuOpenButton={
-          <div className="navbar-button">
-            <FontAwesomeIcon icon={faBars} />
-          </div>
-        }
-        menuCloseButton={
-          <div className="navbar-button navbar-button-close">
-            <FontAwesomeIcon icon={faBars} />
-          </div>
-        }
-        changeMenuOn="500px"
-        largeMenuClassName="navbar"
-        smallMenuClassName="navbar navbar-small"
-        menu={
+      <div className="navbar">
+        {menuButton}
+        {this.state.showMenu ? (
           <div className="navbar-menu">
             <NavLink
               className="navbar-menu-button"
               activeClassName="active-button"
               exact
               to="/"
+              onClick={this.toggleMenu}
             >
               Home
             </NavLink>
@@ -40,6 +69,7 @@ class Navbar extends React.Component<Props> {
               className="navbar-menu-button"
               activeClassName="active-button"
               to="/projects"
+              onClick={this.toggleMenu}
             >
               Projects
             </NavLink>
@@ -47,6 +77,7 @@ class Navbar extends React.Component<Props> {
               className="navbar-menu-button"
               activeClassName="active-button"
               to="/experience"
+              onClick={this.toggleMenu}
             >
               Experience
             </NavLink>
@@ -54,12 +85,13 @@ class Navbar extends React.Component<Props> {
               className="navbar-menu-button"
               activeClassName="active-button"
               to="/contact"
+              onClick={this.toggleMenu}
             >
               Contact
             </NavLink>
           </div>
-        }
-      />
+        ) : null}
+      </div>
     )
   }
 }
