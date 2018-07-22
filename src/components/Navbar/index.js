@@ -6,6 +6,8 @@ import faBars from "@fortawesome/fontawesome-free-solid/faBars"
 
 import "./index.css"
 
+const changeMenu = 800
+
 type Props = {}
 
 type State = {
@@ -13,22 +15,25 @@ type State = {
 }
 
 class Navbar extends React.Component<Props, State> {
-  static defaultProps: Props
-  changeMenu: number
-
   constructor(props: Props) {
     super(props)
-    this.changeMenu = 800
 
-    if (window.innerWidth <= this.changeMenu) {
+    if (window.innerWidth <= changeMenu) {
       this.state = { showMenu: false }
     } else {
       this.state = { showMenu: true }
     }
   }
 
+  closeMenu = () => {
+    window.scrollTo(0, 0)
+    if (window.innerWidth <= changeMenu) {
+      this.setState({ showMenu: false })
+    }
+  }
+
   toggleMenu = () => {
-    if (window.innerWidth <= this.changeMenu || !this.state.showMenu) {
+    if (window.innerWidth <= changeMenu || !this.state.showMenu) {
       this.setState(prev => ({ showMenu: !prev.showMenu }))
     }
   }
@@ -36,7 +41,7 @@ class Navbar extends React.Component<Props, State> {
   render() {
     let menuButton = null
 
-    if (window.innerWidth <= this.changeMenu) {
+    if (window.innerWidth <= changeMenu) {
       menuButton = (
         <div
           className={
@@ -61,7 +66,7 @@ class Navbar extends React.Component<Props, State> {
               activeClassName="active-button"
               exact
               to="/"
-              onClick={this.toggleMenu}
+              onClick={this.closeMenu}
             >
               Home
             </NavLink>
@@ -69,7 +74,7 @@ class Navbar extends React.Component<Props, State> {
               className="navbar-menu-button"
               activeClassName="active-button"
               to="/projects"
-              onClick={this.toggleMenu}
+              onClick={this.closeMenu}
             >
               Projects
             </NavLink>
@@ -77,7 +82,7 @@ class Navbar extends React.Component<Props, State> {
               className="navbar-menu-button"
               activeClassName="active-button"
               to="/experience"
-              onClick={this.toggleMenu}
+              onClick={this.closeMenu}
             >
               Experience
             </NavLink>
@@ -85,7 +90,7 @@ class Navbar extends React.Component<Props, State> {
               className="navbar-menu-button"
               activeClassName="active-button"
               to="/contact"
-              onClick={this.toggleMenu}
+              onClick={this.closeMenu}
             >
               Contact
             </NavLink>
