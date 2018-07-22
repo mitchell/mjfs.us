@@ -8,7 +8,8 @@ before_install:
 
 install:
   - "npm install"
-  - "pip install pip --upgrade --user"
+  - "pyenv global 3.6.3"
+  - "pip install pip --upgrade"
   - "pip install awscli --upgrade --user"
 
 script:
