@@ -16,6 +16,7 @@ class Experience extends React.PureComponent<Props> {
 
   constructor(props: Props) {
     super(props)
+
     this.listedBullets = this.props.bullets.map((bullet, index) => (
       <li key={index}>{bullet}</li>
     ))

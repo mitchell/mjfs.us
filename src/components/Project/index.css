@@ -1,3 +1,8 @@
+.project-badge {
+  display: inline-block;
+  margin: 3px 2px 0 2px;
+}
+
 .project-container {
   border-bottom: 2px solid rgb(139, 191, 209);
   flex: 1 0 45%;

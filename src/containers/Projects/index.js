@@ -14,6 +14,20 @@ class Projects extends React.PureComponent<Props> {
         <Project
           title="mjfs.us"
           repoUrl="https://github.com/mitchelljfs/react-website"
+          badges={[
+            {
+              imgUrl:
+                "https://travis-ci.org/mitchelljfs/react-website.svg?branch=master",
+              linkUrl: "https://travis-ci.org/mitchelljfs/react-website",
+              alt: "Travis Build Status"
+            },
+            {
+              imgUrl:
+                "https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat",
+              linkUrl: "https://github.com/prettier/prettier",
+              alt: "Prettier Style"
+            }
+          ]}
         >
           This website has taken many forms over the years, as my frontend and
           design skills increase. It has been simple HTML, CSS, and JS, and a
@@ -25,6 +39,34 @@ class Projects extends React.PureComponent<Props> {
         <Project
           title="lambdarouter"
           repoUrl="https://github.com/mitchelljfs/lambdarouter"
+          badges={[
+            {
+              imgUrl:
+                "https://godoc.org/github.com/mitchelljfs/lambdarouter?status.svg",
+              linkUrl: "https://godoc.org/github.com/mitchelljfs/lambdarouter",
+              alt: "Go Doc"
+            },
+            {
+              imgUrl:
+                "https://travis-ci.org/mitchelljfs/lambdarouter.svg?branch=master",
+              linkUrl: "https://travis-ci.org/mitchelljfs/lambdarouter",
+              alt: "Build Status"
+            },
+            {
+              imgUrl:
+                "https://coveralls.io/repos/github/mitchelljfs/lambdarouter/badge.svg?branch=master",
+              linkUrl:
+                "https://coveralls.io/github/mitchelljfs/lambdarouter?branch=master",
+              alt: "Code Coverage"
+            },
+            {
+              imgUrl:
+                "https://goreportcard.com/badge/github.com/mitchelljfs/lambdarouter",
+              linkUrl:
+                "https://goreportcard.com/report/github.com/mitchelljfs/lambdarouter",
+              alt: "Code Coverage"
+            }
+          ]}
         >
           This package will become a fully featured AWS Lambda function router,
           able to respond to HTTP, Schedule, Cognito, and SNS events. It will
@@ -36,6 +78,7 @@ class Projects extends React.PureComponent<Props> {
         <Project
           title="destinate"
           repoUrl="https://github.com/mitchelljfs/destinate"
+          badges={[]}
         >
           destinate is a react-native, iOS (and Android) app. Its main objective
           is to suggest places or activities to the user based on their past
@@ -47,6 +90,7 @@ class Projects extends React.PureComponent<Props> {
         <Project
           title="sys-mgmt"
           repoUrl="https://github.com/mitchelljfs/sys-mgmt"
+          badges={[]}
         >
           A minimal, cross-platform, unix-like-system management program. This
           program is designed to detect which programs are affiliated with the
