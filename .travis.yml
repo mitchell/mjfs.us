@@ -8,7 +8,8 @@ before_install:
 
 install:
   - "npm install"
-  - "pip install awscli --user"
+  - "pip install pip --upgrade --user"
+  - "pip install awscli --upgrade --user"
 
 script:
   - "npm run build"
