@@ -14,7 +14,7 @@ class Website extends React.Component<Props> {
     return (
       <div className="website">
         <div className="main-container">
-          <Navbar changeMenu={800} />
+          <Navbar />
           <Header />
           <Routes />
         </div>

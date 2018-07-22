@@ -7,10 +7,10 @@
 
 .main-container {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 55px;
   min-width: 800px;
-  width: 50%;
   text-align: center;
+  width: 50%;
 }
 
 @media screen and (max-width: 800px) {
