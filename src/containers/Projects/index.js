@@ -13,13 +13,13 @@ class Projects extends React.PureComponent<Props> {
       <div className="projects-container">
         <Project
           title="mjfs.us"
-          repoUrl="https://github.com/mitchelljfs/react-website"
+          repoUrl="https://github.com/mitchelljfs/mjfs.us"
           badges={[
             {
               imgUrl:
-                "https://travis-ci.org/mitchelljfs/react-website.svg?branch=master",
-              linkUrl: "https://travis-ci.org/mitchelljfs/react-website",
-              alt: "Travis Build Status"
+                "https://travis-ci.org/mitchelljfs/mjfs.us.svg?branch=master",
+              linkUrl: "https://travis-ci.org/mitchelljfs/mjfs.us",
+              alt: "Build Status"
             },
             {
               imgUrl:
@@ -29,11 +29,11 @@ class Projects extends React.PureComponent<Props> {
             }
           ]}
         >
-          This website has taken many forms over the years, as my frontend and
-          design skills increase. It has been simple HTML, CSS, and JS, and a
-          Ruby Sinatra web app. Currently it takes the form of a React.js app. I
-          enjoy React.js (and similar frontend frameworks) as they can be used
-          to make even the simplest projects modular and extensible.
+          My personal site has taken the form of a plain HTML site and a Ruby
+          app, but it currently takes the form of a React.js app. It was
+          developed using Eslint, Prettier and Flow. It is hosted in multiple
+          locations around the world, using AWS S3 and Cloudfront. It is also
+          continously deployed using Travis CI.
         </Project>
 
         <Project
@@ -64,7 +64,7 @@ class Projects extends React.PureComponent<Props> {
                 "https://goreportcard.com/badge/github.com/mitchelljfs/lambdarouter",
               linkUrl:
                 "https://goreportcard.com/report/github.com/mitchelljfs/lambdarouter",
-              alt: "Code Coverage"
+              alt: "Go Reportcard"
             }
           ]}
         >
