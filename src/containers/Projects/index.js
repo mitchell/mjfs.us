@@ -23,6 +23,13 @@ class Projects extends React.PureComponent<Props> {
             },
             {
               imgUrl:
+                "https://img.shields.io/codacy/grade/25d7767066fb4130af653afc1121bf8e.svg",
+              linkUrl:
+                "https://app.codacy.com/project/mitchelljfs/mjfs.us/dashboard",
+              alt: "Code Quality"
+            },
+            {
+              imgUrl:
                 "https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat",
               linkUrl: "https://github.com/prettier/prettier",
               alt: "Prettier Style"

@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir -p ~/.aws
 
 cat > ~/.aws/credentials << EOL

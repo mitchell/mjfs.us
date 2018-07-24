@@ -7,7 +7,6 @@
 }
 
 .contact-container p {
-  @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
   background-color: rgb(216, 221, 233);
   border-radius: 5px;
   color: rgb(46, 51, 64);
