@@ -1,4 +1,7 @@
-# mjfs.us [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier) [![Build Status](https://travis-ci.org/mitchelljfs/mjfs.us.svg?branch=master)](https://travis-ci.org/mitchelljfs/mjfs.us) [![Codacy grade](https://img.shields.io/codacy/grade/25d7767066fb4130af653afc1121bf8e.svg)](https://app.codacy.com/project/mitchelljfs/mjfs.us/dashboard)
+# mjfs.us
+[![Build Status](https://travis-ci.org/mitchelljfs/mjfs.us.svg?branch=master)](https://travis-ci.org/mitchelljfs/mjfs.us)
+[![Maintainability](https://api.codeclimate.com/v1/badges/dc70437f1490980d8e8e/maintainability)](https://codeclimate.com/github/mitchelljfs/mjfs.us/maintainability)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 
 This is my personal site and it has taken the form of a plain HTML site and a Ruby
 app, but it currently takes the form of a React.js app. It was

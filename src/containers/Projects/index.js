@@ -23,16 +23,10 @@ class Projects extends React.PureComponent<Props> {
             },
             {
               imgUrl:
-                "https://img.shields.io/codacy/grade/25d7767066fb4130af653afc1121bf8e.svg",
+                "https://api.codeclimate.com/v1/badges/dc70437f1490980d8e8e/maintainability",
               linkUrl:
-                "https://app.codacy.com/project/mitchelljfs/mjfs.us/dashboard",
-              alt: "Code Quality"
-            },
-            {
-              imgUrl:
-                "https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat",
-              linkUrl: "https://github.com/prettier/prettier",
-              alt: "Prettier Style"
+                "https://codeclimate.com/github/mitchelljfs/mjfs.us/maintainability",
+              alt: "Maintainability"
             }
           ]}
         >
@@ -49,29 +43,23 @@ class Projects extends React.PureComponent<Props> {
           badges={[
             {
               imgUrl:
-                "https://godoc.org/github.com/mitchelljfs/lambdarouter?status.svg",
-              linkUrl: "https://godoc.org/github.com/mitchelljfs/lambdarouter",
-              alt: "Go Doc"
-            },
-            {
-              imgUrl:
                 "https://travis-ci.org/mitchelljfs/lambdarouter.svg?branch=master",
               linkUrl: "https://travis-ci.org/mitchelljfs/lambdarouter",
               alt: "Build Status"
             },
             {
               imgUrl:
-                "https://coveralls.io/repos/github/mitchelljfs/lambdarouter/badge.svg?branch=master",
+                "https://api.codeclimate.com/v1/badges/7270c6c4017b36d07360/test_coverage",
               linkUrl:
-                "https://coveralls.io/github/mitchelljfs/lambdarouter?branch=master",
+                "https://codeclimate.com/github/mitchelljfs/lambdarouter/test_coverage",
               alt: "Code Coverage"
             },
             {
               imgUrl:
-                "https://goreportcard.com/badge/github.com/mitchelljfs/lambdarouter",
+                "https://api.codeclimate.com/v1/badges/7270c6c4017b36d07360/maintainability",
               linkUrl:
-                "https://goreportcard.com/report/github.com/mitchelljfs/lambdarouter",
-              alt: "Go Reportcard"
+                "https://codeclimate.com/github/mitchelljfs/lambdarouter/maintainability",
+              alt: "Maintainability"
             }
           ]}
         >
