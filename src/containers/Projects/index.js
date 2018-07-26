@@ -23,7 +23,7 @@ class Projects extends React.PureComponent<Props> {
             },
             {
               imgUrl:
-                "https://img.shields.io/codeclimate/maintainability/mitchelljfs/mjfs.us.svg",
+                "https://api.codeclimate.com/v1/badges/dc70437f1490980d8e8e/maintainability",
               linkUrl:
                 "https://codeclimate.com/github/mitchelljfs/mjfs.us/maintainability",
               alt: "Maintainability"
@@ -49,14 +49,14 @@ class Projects extends React.PureComponent<Props> {
             },
             {
               imgUrl:
-                "https://img.shields.io/codeclimate/coverage/mitchelljfs/lambdarouter.svg",
+                "https://api.codeclimate.com/v1/badges/7270c6c4017b36d07360/test_coverage",
               linkUrl:
                 "https://codeclimate.com/github/mitchelljfs/lambdarouter/test_coverage",
               alt: "Code Coverage"
             },
             {
               imgUrl:
-                "https://img.shields.io/codeclimate/maintainability/mitchelljfs/lambdarouter.svg",
+                "https://api.codeclimate.com/v1/badges/7270c6c4017b36d07360/maintainability",
               linkUrl:
                 "https://codeclimate.com/github/mitchelljfs/lambdarouter/maintainability",
               alt: "Maintainability"

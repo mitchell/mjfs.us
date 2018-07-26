@@ -1,6 +1,6 @@
 # mjfs.us
 [![Build Status](https://travis-ci.org/mitchelljfs/mjfs.us.svg?branch=master)](https://travis-ci.org/mitchelljfs/mjfs.us)
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/mitchelljfs/mjfs.us.svg)](https://codeclimate.com/github/mitchelljfs/mjfs.us/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/dc70437f1490980d8e8e/maintainability)](https://codeclimate.com/github/mitchelljfs/mjfs.us/maintainability)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 
 This is my personal site and it has taken the form of a plain HTML site and a Ruby
