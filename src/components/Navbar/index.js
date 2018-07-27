@@ -1,10 +1,11 @@
 // @flow
-import React from "react"
+import * as React from "react"
 import { NavLink } from "react-router-dom"
 import FontAwesomeIcon from "@fortawesome/react-fontawesome"
 import faBars from "@fortawesome/fontawesome-free-solid/faBars"
 
 import "./index.css"
+import { routes } from "../../routes/routes.js"
 
 const changeMenu = 800
 
@@ -15,6 +16,8 @@ type State = {
 }
 
 class Navbar extends React.Component<Props, State> {
+  buttons: Array<NavLink<string>>
+
   constructor(props: Props) {
     super(props)
 
@@ -23,25 +26,40 @@ class Navbar extends React.Component<Props, State> {
     } else {
       this.state = { showMenu: true }
     }
+
+    this.buttons = routes.map(route => (
+      <NavLink
+        key={route.name}
+        className="navbar-menu-button"
+        activeClassName="active-button"
+        exact={route.exact}
+        to={route.path}
+        onClick={this.closeMenu}
+      >
+        {route.name}
+      </NavLink>
+    ))
   }
+
+  isMobile = () => window.innerWidth <= changeMenu
 
   closeMenu = () => {
     window.scrollTo(0, 0)
-    if (window.innerWidth <= changeMenu) {
+    if (this.isMobile()) {
       this.setState({ showMenu: false })
     }
   }
 
   toggleMenu = () => {
-    if (window.innerWidth <= changeMenu || !this.state.showMenu) {
+    if (this.isMobile() || !this.state.showMenu) {
       this.setState(prev => ({ showMenu: !prev.showMenu }))
     }
   }
 
   render() {
-    let menuButton = null
+    let menuButton: ?React.Element<string>
 
-    if (window.innerWidth <= changeMenu) {
+    if (this.isMobile()) {
       menuButton = (
         <div
           className={
@@ -60,41 +78,7 @@ class Navbar extends React.Component<Props, State> {
       <div className="navbar">
         {menuButton}
         {this.state.showMenu ? (
-          <div className="navbar-menu">
-            <NavLink
-              className="navbar-menu-button"
-              activeClassName="active-button"
-              exact
-              to="/"
-              onClick={this.closeMenu}
-            >
-              Home
-            </NavLink>
-            <NavLink
-              className="navbar-menu-button"
-              activeClassName="active-button"
-              to="/projects"
-              onClick={this.closeMenu}
-            >
-              Projects
-            </NavLink>
-            <NavLink
-              className="navbar-menu-button"
-              activeClassName="active-button"
-              to="/experience"
-              onClick={this.closeMenu}
-            >
-              Experience
-            </NavLink>
-            <NavLink
-              className="navbar-menu-button"
-              activeClassName="active-button"
-              to="/contact"
-              onClick={this.closeMenu}
-            >
-              Contact
-            </NavLink>
-          </div>
+          <div className="navbar-menu">{this.buttons}</div>
         ) : null}
       </div>
     )

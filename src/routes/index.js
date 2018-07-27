@@ -2,27 +2,36 @@
 import React from "react"
 import { Route, Switch } from "react-router-dom"
 
-import Home from "../containers/Home"
-import Projects from "../containers/Projects"
-import Experience from "../containers/Experience"
-import Contact from "../containers/Contact"
+import { routes, redirects } from "./routes.js"
 
 type Props = {}
 
 class Routes extends React.Component<Props> {
+  routes: Array<Route>
+  redirects: Array<Route>
+
+  constructor(props: Props) {
+    super(props)
+
+    this.routes = routes.map(route => (
+      <Route
+        key={route.name}
+        exact={route.exact}
+        path={route.path}
+        component={route.component}
+      />
+    ))
+
+    this.redirects = redirects.map(route => (
+      <Route key={route.path} path={route.path} render={route.func} />
+    ))
+  }
+
   render() {
     return (
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/experience" component={Experience} />
-        <Route path="/contact" component={Contact} />
-        <Route
-          path="/linkedin"
-          render={() =>
-            (window.location = "https://linkedin.com/in/mitchelljfsimon")
-          }
-        />
+        {this.routes}
+        {this.redirects}
       </Switch>
     )
   }
