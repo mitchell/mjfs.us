@@ -10,7 +10,7 @@
   background-color: rgb(216, 221, 233);
   border-radius: 5px;
   color: rgb(46, 51, 64);
-  font-family: "IBM Plex Mono", mono;
+  font-family: "IBM Plex Mono", monospace;
   margin: 10% auto;
   padding: 5px;
   user-select: all;

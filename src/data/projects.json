@@ -17,7 +17,7 @@
       }
     ],
     "description":
-      "My personal site has taken the form of a plain HTML site and a Ruby app, but it currently takes the form of a React.js app. It was developed using Eslint, Prettier and Flow. It is hosted in multiple locations around the world, using AWS S3 and Cloudfront. It is also continously deployed using Travis CI."
+      "This is the source code for this site, which currently utilizes the React.js library. In the past it was built using plain HTML, then Sinatra. It was developed using ESLint, Prettier, Flow, and continously deployed using Travis CI. The site itself is hosted on S3 and distributed to several cache locations around the world using Cloudfront."
   },
 
   {

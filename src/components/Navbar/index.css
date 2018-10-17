@@ -12,9 +12,11 @@
   border-radius: 2px;
   color: white;
   float: right;
-  margin: 5px;
-  padding: 5px 10px;
+  height: auto;
+  margin: 7px 5px 2px 100%;
+  padding: 5px 10px 5px 10px;
   transition: box-shadow 0.1s;
+  width: auto;
 }
 
 .navbar-button-closed {
@@ -26,22 +28,24 @@
 }
 
 .navbar-menu {
+  display: flex;
+  height: auto;
+  justify-content: space-around;
   margin: auto;
-  min-width: 840px;
-  width: 52.5%;
+  min-width: 800px;
+  width: 51%;
 }
 
 .navbar-menu-button {
   border-radius: 3px;
   color: white;
-  float: left;
-  margin: 1% 2.5%;
+  flex: 1 1 auto;
+  margin: 7px 10px;
   overflow: hidden;
-  padding: 7px 0;
+  padding: 8px;
   text-decoration: none;
   text-overflow: ellipsis;
   transition: background-color 0.2s, box-shadow 0.1s;
-  width: 20%;
 }
 
 .navbar-menu-button:hover {
@@ -65,14 +69,14 @@
   }
 
   .navbar-menu {
-    margin: auto;
+    flex-direction: column;
+    height: auto;
     min-width: 0;
-    width: 75%;
+    width: 80%;
   }
   .navbar-menu-button {
+    height: auto;
     margin: 5px 0;
-    padding: 5px 0;
-    width: 100%;
   }
 
   .navbar-menu-button:hover {

@@ -2,25 +2,36 @@
 import * as React from "react"
 
 import "./index.css"
-import Job from "../../components/Job"
+import JobComponent from "../../components/Job"
 
-import jobs from "../../data/jobs.json"
+import jobsData from "../../data/jobs.json"
 
 type Props = {}
 
+type Job = {
+  timeSpan: string,
+  title: string,
+  company: string,
+  bullets: Array<string>
+}
+
 class Experience extends React.PureComponent<Props> {
-  render() {
-    let jobComponents = jobs.map(job => (
-      <Job
-        key={job.timeSpan}
+  renderJobs = (jobs: Array<Job>) => {
+    return jobs.map(job => (
+      <JobComponent
+        key={job.title}
         title={job.title}
         company={job.company}
         timeSpan={job.timeSpan}
         bullets={job.bullets}
       />
     ))
+  }
 
-    return <div className="experience-container">{jobComponents}</div>
+  render() {
+    return (
+      <div className="experience-container">{this.renderJobs(jobsData)}</div>
+    )
   }
 }
 

@@ -14,15 +14,16 @@ class Home extends React.PureComponent<Props> {
         <p>Hello and welcome,</p>
         <p>
           My name is Mitchell Simon. I am the Lead Backend Engineer at
-          Hypremium, where I lead the architecture of and maintain our
-          serverless, Golang backend. I also offer my skills as a consulting web
+          Hypremium. Where I lead the architecture of and maintain our
+          platform&#39;s backend API. I also offer my skills as a consulting web
           & cloud developer.
         </p>
         <p>
           My professional interests include web development (with an emphasis on
-          backend), system administration, network architecture, software
-          engineering, cybersecurity, and business administration. My personal
-          interests include music performance, skiing, and politics.
+          backend), software architecture, system administration, cloud
+          architecture, software engineering, cybersecurity, and business
+          administration. My personal interests include music performance,
+          skiing, and politics.
         </p>
         <p>
           Thank you for reading my quick bio. If you would like to contact me
