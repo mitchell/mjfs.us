@@ -13,7 +13,7 @@
   color: white;
   float: right;
   height: auto;
-  margin: 7px 5px 2px 100%;
+  margin: 7px 4px 2px 0;
   padding: 5px 10px 5px 10px;
   transition: box-shadow 0.1s;
   width: auto;
@@ -71,8 +71,9 @@
   .navbar-menu {
     flex-direction: column;
     height: auto;
+    margin: 0 13.5%;
     min-width: 0;
-    width: 80%;
+    width: 75%;
   }
   .navbar-menu-button {
     height: auto;
