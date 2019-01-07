@@ -10,7 +10,7 @@
       },
       {
         "imgUrl": "https://api.codeclimate.com/v1/badges/dc70437f1490980d8e8e/maintainability",
-        "linkUrl": "https://codeclimate.com/github/mitchell/mjfs.us/maintainability",
+        "linkUrl": "https://codeclimate.com/github/mitchelljfs/mjfs.us/maintainability",
         "alt": "Maintainability"
       }
     ],
@@ -28,12 +28,12 @@
       },
       {
         "imgUrl": "https://api.codeclimate.com/v1/badges/7270c6c4017b36d07360/test_coverage",
-        "linkUrl": "https://codeclimate.com/github/mitchell/lambdarouter/test_coverage",
+        "linkUrl": "https://codeclimate.com/github/mitchelljfs/lambdarouter/test_coverage",
         "alt": "Code Coverage"
       },
       {
         "imgUrl": "https://api.codeclimate.com/v1/badges/7270c6c4017b36d07360/maintainability",
-        "linkUrl": "https://codeclimate.com/github/mitchell/lambdarouter/maintainability",
+        "linkUrl": "https://codeclimate.com/github/mitchelljfs/lambdarouter/maintainability",
         "alt": "Maintainability"
       }
     ],
