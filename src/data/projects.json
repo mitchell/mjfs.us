@@ -1,67 +1,56 @@
 [
   {
     "title": "mjfs.us",
-    "repoUrl": "https://github.com/mitchelljfs/mjfs.us",
+    "repoUrl": "https://github.com/mitchell/mjfs.us",
     "badges": [
       {
-        "imgUrl": "https://travis-ci.org/mitchelljfs/mjfs.us.svg?branch=master",
-        "linkUrl": "https://travis-ci.org/mitchelljfs/mjfs.us",
+        "imgUrl": "https://travis-ci.org/mitchell/mjfs.us.svg?branch=master",
+        "linkUrl": "https://travis-ci.org/mitchell/mjfs.us",
         "alt": "Build Status"
       },
       {
-        "imgUrl":
-          "https://api.codeclimate.com/v1/badges/dc70437f1490980d8e8e/maintainability",
-        "linkUrl":
-          "https://codeclimate.com/github/mitchelljfs/mjfs.us/maintainability",
+        "imgUrl": "https://api.codeclimate.com/v1/badges/dc70437f1490980d8e8e/maintainability",
+        "linkUrl": "https://codeclimate.com/github/mitchell/mjfs.us/maintainability",
         "alt": "Maintainability"
       }
     ],
-    "description":
-      "This is the source code for this site, which currently utilizes the React.js library. In the past it was built using plain HTML, then Sinatra. It was developed using ESLint, Prettier, Flow, and continously deployed using Travis CI. The site itself is hosted on S3 and distributed to several cache locations around the world using Cloudfront."
+    "description": "This is the source code for this site, which currently utilizes the React.js library. In the past it was built using plain HTML, then Sinatra. It was developed using ESLint, Prettier, Flow, and continously deployed using Travis CI. The site itself is hosted on S3 and distributed to several cache locations around the world using Cloudfront."
   },
 
   {
     "title": "lambdarouter",
-    "repoUrl": "https://github.com/mitchelljfs/lambdarouter",
+    "repoUrl": "https://github.com/mitchell/lambdarouter",
     "badges": [
       {
-        "imgUrl":
-          "https://travis-ci.org/mitchelljfs/lambdarouter.svg?branch=master",
-        "linkUrl": "https://travis-ci.org/mitchelljfs/lambdarouter",
+        "imgUrl": "https://travis-ci.org/mitchell/lambdarouter.svg?branch=master",
+        "linkUrl": "https://travis-ci.org/mitchell/lambdarouter",
         "alt": "Build Status"
       },
       {
-        "imgUrl":
-          "https://api.codeclimate.com/v1/badges/7270c6c4017b36d07360/test_coverage",
-        "linkUrl":
-          "https://codeclimate.com/github/mitchelljfs/lambdarouter/test_coverage",
+        "imgUrl": "https://api.codeclimate.com/v1/badges/7270c6c4017b36d07360/test_coverage",
+        "linkUrl": "https://codeclimate.com/github/mitchell/lambdarouter/test_coverage",
         "alt": "Code Coverage"
       },
       {
-        "imgUrl":
-          "https://api.codeclimate.com/v1/badges/7270c6c4017b36d07360/maintainability",
-        "linkUrl":
-          "https://codeclimate.com/github/mitchelljfs/lambdarouter/maintainability",
+        "imgUrl": "https://api.codeclimate.com/v1/badges/7270c6c4017b36d07360/maintainability",
+        "linkUrl": "https://codeclimate.com/github/mitchell/lambdarouter/maintainability",
         "alt": "Maintainability"
       }
     ],
-    "description":
-      "This package will become a fully featured AWS Lambda function router, able to respond to HTTP, Schedule, Cognito, and SNS events. It will also support middleware interfacing. So far it includes functionality for API Gateway. Check out the GoDoc Reference to see how to instantiate a router and create endpoints."
+    "description": "This package will become a fully featured AWS Lambda function router, able to respond to HTTP, Schedule, Cognito, and SNS events. It will also support middleware interfacing. So far it includes functionality for API Gateway. Check out the GoDoc Reference to see how to instantiate a router and create endpoints."
   },
 
   {
     "title": "destinate",
-    "repoUrl": "https://github.com/mitchelljfs/destinate",
+    "repoUrl": "https://github.com/mitchell/destinate",
     "badges": [],
-    "description":
-      "destinate is a react-native, iOS (and Android) app. Its main objective is to suggest places or activities to the user based on their past choices. It utilizes a serverless backend, written in Go and hosted on AWS API Gateway/Lambda. It is still under development, as a side project of Arash Lari and I."
+    "description": "destinate is a react-native, iOS (and Android) app. Its main objective is to suggest places or activities to the user based on their past choices. It utilizes a serverless backend, written in Go and hosted on AWS API Gateway/Lambda. It is still under development, as a side project of Arash Lari and I."
   },
 
   {
     "title": "sys-mgmt",
-    "repoUrl": "https://github.com/mitchelljfs/sys-mgmt",
+    "repoUrl": "https://github.com/mitchell/sys-mgmt",
     "badges": [],
-    "description":
-      "A minimal, cross-platform, unix-like-system management program. This program is designed to detect which programs are affiliated with the unix-like system, whether it be Debian or macOS. There are various shortcuts to common unix-like commands, such as update and upgrade (for package managers), another is poweroff or reboot."
+    "description": "A minimal, cross-platform, unix-like-system management program. This program is designed to detect which programs are affiliated with the unix-like system, whether it be Debian or macOS. There are various shortcuts to common unix-like commands, such as update and upgrade (for package managers), another is poweroff or reboot."
   }
 ]
