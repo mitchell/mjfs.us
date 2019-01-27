@@ -14,7 +14,7 @@
         "alt": "Maintainability"
       }
     ],
-    "description": "This is the source code for this site, which currently utilizes the React.js library. In the past it was built using plain HTML, then Sinatra. It was developed using ESLint, Prettier, Flow, and continously deployed using Travis CI. The site itself is hosted on S3 and distributed to several cache locations around the world using Cloudfront."
+    "description": "This is the source code for this site, which currently utilizes the React.js library. In the past it was built using plain HTML, then Sinatra. It was developed using Flow, and continously deployed using Travis CI. The site itself is hosted on S3 and distributed to several cache locations around the world using Cloudfront."
   },
 
   {
@@ -37,14 +37,14 @@
         "alt": "Maintainability"
       }
     ],
-    "description": "This package will become a fully featured AWS Lambda function router, able to respond to HTTP, Schedule, Cognito, and SNS events. It will also support middleware interfacing. So far it includes functionality for API Gateway. Check out the GoDoc Reference to see how to instantiate a router and create endpoints."
+    "description": "So far this package can create a router and routes whose execution utilizes a middleware context pattern, all in one Golang Lambda function. It has full test coverage, and is currently deployed in numerous services where I am employed. Check out the GoDoc Reference to see how to instantiate a router and create endpoints."
   },
 
   {
     "title": "destinate",
     "repoUrl": "https://github.com/mitchell/destinate",
     "badges": [],
-    "description": "destinate is a react-native, iOS (and Android) app. Its main objective is to suggest places or activities to the user based on their past choices. It utilizes a serverless backend, written in Go and hosted on AWS API Gateway/Lambda. It is still under development, as a side project of Arash Lari and I."
+    "description": "destinate is a react-native, iOS (and Android) app. Its main objective is to suggest places or activities to the user based on their past choices. It utilizes a serverless backend, written in Go and hosted on AWS API Gateway/Lambda. It is still under development, as a side project of Arash Lari and myself."
   },
 
   {

@@ -1,8 +1,7 @@
 // @flow
-import Home from "../containers/Home"
+import Home from "../components/Home"
 import Projects from "../containers/Projects"
-// import Experience from "../containers/Experience"
-import Contact from "../containers/Contact"
+import Contact from "../components/Contact"
 
 const routes = [
   {
@@ -17,12 +16,6 @@ const routes = [
     component: Projects,
     exact: false
   },
-  // {
-  //   path: "/experience",
-  //   name: "Experience",
-  //   component: Experience,
-  //   exact: false
-  // },
   {
     path: "/contact",
     name: "Contact",
