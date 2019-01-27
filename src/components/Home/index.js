@@ -13,12 +13,12 @@ class Home extends React.PureComponent<Props> {
         <img src={profile} alt="Profile" />
         <p>Hello and welcome,</p>
         <p>
-          I am a software developer, with an expertise in serverless (FaaS)
-          service architecture. Most of my experience is in web services, and
-          the languages I am currently proficient in include Go, JavaScript, and
-          Ruby. I build web services with APIs mostly utilizing the REST
-          architectural style, and various relational and key-value DBMS. In
-          addition to this, I am acclimated with JaveScript client-side
+          I am a software developer, with most of my experience in web services.
+          I have been focused on serverless (FaaS) service architecture, for the
+          last year. The languages I am currently proficient in include Go,
+          JavaScript, and Ruby. I build web services with APIs mostly utilizing
+          the REST architectural style, and various relational and key-value
+          DBMS. In addition to this, I am acclimated with JaveScript client-side
           development, like React.js & Native. I&#39;m currently working to
           acclimate myself with GraphQL and Docker deployments.
         </p>
