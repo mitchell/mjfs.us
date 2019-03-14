@@ -12,7 +12,7 @@ class Header extends React.PureComponent<Props> {
     return (
       <div className="header-container">
         <h2>Mitchell J. F. Simon</h2>
-        <SmallText>Lead Software Engineer (Backend), Hypremium.</SmallText>
+        <SmallText>Backend Engineer, TV Time</SmallText>
       </div>
     )
   }

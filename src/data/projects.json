@@ -37,7 +37,7 @@
         "alt": "Maintainability"
       }
     ],
-    "description": "So far this package can create a router and routes whose execution utilizes a middleware context pattern, all in one Golang Lambda function. It has full test coverage, and is currently deployed in numerous services where I am employed. Check out the GoDoc Reference to see how to instantiate a router and create endpoints."
+    "description": "So far this package can create a router and routes whose execution utilizes a middleware context pattern, all in one Golang Lambda function. It has full test coverage, and has been used in a few production services. Check out the GoDoc Reference to see how to initialize a router and create endpoints."
   },
 
   {

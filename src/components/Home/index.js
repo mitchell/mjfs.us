@@ -19,8 +19,8 @@ class Home extends React.PureComponent<Props> {
           JavaScript, and Ruby. I build web services with APIs mostly utilizing
           the REST architectural style, and various relational and key-value
           DBMS. In addition to this, I am acclimated with JaveScript client-side
-          development, like React.js & Native. I&#39;m currently working to
-          acclimate myself with GraphQL and Docker deployments.
+          development, like React.js/Native. I&#39;m currently working to
+          acclimate myself with gRPC and Docker deployments.
         </p>
         <p>
           My professional interests, aside from the above, include software
