@@ -1,23 +1,5 @@
 [
   {
-    "title": "mjfs.us",
-    "repoUrl": "https://github.com/mitchell/mjfs.us",
-    "badges": [
-      {
-        "imgUrl": "https://travis-ci.org/mitchell/mjfs.us.svg?branch=master",
-        "linkUrl": "https://travis-ci.org/mitchell/mjfs.us",
-        "alt": "Build Status"
-      },
-      {
-        "imgUrl": "https://api.codeclimate.com/v1/badges/dc70437f1490980d8e8e/maintainability",
-        "linkUrl": "https://codeclimate.com/github/mitchelljfs/mjfs.us/maintainability",
-        "alt": "Maintainability"
-      }
-    ],
-    "description": "This is the source code for this site, which currently utilizes the React.js library. In the past it was built using plain HTML, then Sinatra. It was developed using Flow, and continously deployed using Travis CI. The site itself is hosted on S3 and distributed to several cache locations around the world using Cloudfront."
-  },
-
-  {
     "title": "lambdarouter",
     "repoUrl": "https://github.com/mitchell/lambdarouter",
     "badges": [
@@ -37,7 +19,25 @@
         "alt": "Maintainability"
       }
     ],
-    "description": "So far this package can create a router and routes whose execution utilizes a middleware context pattern, all in one Golang Lambda function. It has full test coverage, and has been used in a few production services. Check out the GoDoc Reference to see how to initialize a router and create endpoints."
+    "description": "This package contains a router capable of routing many AWS Lambda API gateway requests to anything that implements the aws-lambda-go Handler interface, all in one Lambda function. It plays especially well with go-kit's awslambda transport package. Check out the GoDoc Reference to see how to initialize a router and create endpoints."
+  },
+
+  {
+    "title": "mjfs.us",
+    "repoUrl": "https://github.com/mitchell/mjfs.us",
+    "badges": [
+      {
+        "imgUrl": "https://travis-ci.org/mitchell/mjfs.us.svg?branch=master",
+        "linkUrl": "https://travis-ci.org/mitchell/mjfs.us",
+        "alt": "Build Status"
+      },
+      {
+        "imgUrl": "https://api.codeclimate.com/v1/badges/dc70437f1490980d8e8e/maintainability",
+        "linkUrl": "https://codeclimate.com/github/mitchelljfs/mjfs.us/maintainability",
+        "alt": "Maintainability"
+      }
+    ],
+    "description": "This is the source code for this site, which currently utilizes the React.js library. In the past it was built using plain HTML, then Sinatra. It was developed using Flow, and continously deployed using Travis CI. The site itself is hosted on S3 and distributed to several cache locations around the world using Cloudfront."
   },
 
   {
