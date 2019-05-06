@@ -18,7 +18,7 @@ class Home extends React.PureComponent<Props> {
 	  services with cloud-native architectures. Tech that I love working
 	  with includes Go, TypeScript, gRPC, Serverless, Docker, Redis, and
 	  PostgreSQL. Concepts that I am currently focused on are Docker
-	  containerization and orchestration, microservices project architecture
+	  containerization and orchestration, microservices software architecture
 	  w/ dependency injection, and infrastructure as code using Terraform.
         </p>
         <p>
@@ -27,7 +27,6 @@ class Home extends React.PureComponent<Props> {
           development. My personal interests include music performance, skiing,
           and politics.
         </p>
-        <p />
         <p>
           Thank you for reading my quick bio. If you would like to contact me
           visit the contact page for all of your options.
