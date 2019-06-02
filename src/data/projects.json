@@ -41,10 +41,10 @@
   },
 
   {
-    "title": "destinate",
-    "repoUrl": "https://github.com/mitchell/destinate",
+    "title": "selfpass",
+    "repoUrl": "https://github.com/mitchell/selfpass",
     "badges": [],
-    "description": "destinate is a react-native, iOS (and Android) app. Its main objective is to suggest places or activities to the user based on their past choices. It utilizes a serverless backend, written in Go and hosted on AWS API Gateway/Lambda. It is still under development, as a side project of Arash Lari and myself."
+    "description": "Selfpass is intended to be a single-user (or trusted multi-user) password manager capable of encrypting/decrypting credentials and storing them remotely through encrypted transportation. All of which is deployable locally or to popular cloud platforms such as GCP and AWS. Some of the technologies used includes, Go-Kit, gRPC, Docker, and Redis. Much more to read in the repo."
   },
 
   {
