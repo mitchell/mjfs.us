@@ -1,11 +1,11 @@
 // @flow
-import * as React from "react"
+import * as React from 'react'
 
-import ProjectComponent from "../../components/Project"
+import ProjectComponent from '../../components/Project'
 
-import "./index.css"
+import './index.css'
 
-import projectsData from "../../data/projects.json"
+import projectsData from '../../data/projects.json'
 
 type Props = {}
 
@@ -36,9 +36,9 @@ class Projects extends React.PureComponent<Props> {
     ))
   }
 
-  render() {
+  render () {
     return (
-      <div className="projects-container">
+      <div className='projects-container'>
         {this.renderProjects(projectsData)}
       </div>
     )

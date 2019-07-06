@@ -1,11 +1,11 @@
 // @flow
-import * as React from "react"
-import { NavLink } from "react-router-dom"
-import FontAwesomeIcon from "@fortawesome/react-fontawesome"
-import faBars from "@fortawesome/fontawesome-free-solid/faBars"
+import * as React from 'react'
+import { NavLink } from 'react-router-dom'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import faBars from '@fortawesome/fontawesome-free-solid/faBars'
 
-import "./index.css"
-import { routes } from "../../routes/routes.js"
+import './index.css'
+import { routes } from '../../routes/routes.js'
 
 const changeMenu = 800
 
@@ -18,7 +18,7 @@ type State = {
 class Navbar extends React.Component<Props, State> {
   buttons: Array<NavLink<string>>
 
-  constructor(props: Props) {
+  constructor (props: Props) {
     super(props)
 
     if (window.innerWidth <= changeMenu) {
@@ -30,8 +30,8 @@ class Navbar extends React.Component<Props, State> {
     this.buttons = routes.map(route => (
       <NavLink
         key={route.name}
-        className="navbar-menu-button"
-        activeClassName="active-button"
+        className='navbar-menu-button'
+        activeClassName='active-button'
         exact={route.exact}
         to={route.path}
         onClick={this.closeMenu}
@@ -56,7 +56,7 @@ class Navbar extends React.Component<Props, State> {
     }
   }
 
-  render() {
+  render () {
     let menuButton: ?React.Element<string>
 
     if (this.isMobile()) {
@@ -64,8 +64,8 @@ class Navbar extends React.Component<Props, State> {
         <div
           className={
             this.state.showMenu
-              ? "navbar-button navbar-button-closed"
-              : "navbar-button"
+              ? 'navbar-button navbar-button-closed'
+              : 'navbar-button'
           }
           onClick={this.toggleMenu}
         >
@@ -75,10 +75,10 @@ class Navbar extends React.Component<Props, State> {
     }
 
     return (
-      <div className="navbar">
+      <div className='navbar'>
         {menuButton}
         {this.state.showMenu ? (
-          <div className="navbar-menu">{this.buttons}</div>
+          <div className='navbar-menu'>{this.buttons}</div>
         ) : null}
       </div>
     )

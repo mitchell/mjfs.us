@@ -1,7 +1,7 @@
 // @flow
-import React from "react"
+import React from 'react'
 
-import "./index.css"
+import './index.css'
 
 type Props = {
   href: string,
@@ -9,9 +9,9 @@ type Props = {
 }
 
 class ClearButton extends React.PureComponent<Props> {
-  render() {
+  render () {
     return (
-      <a className="clear-button" href={this.props.href}>
+      <a className='clear-button' href={this.props.href}>
         {this.props.children}
       </a>
     )

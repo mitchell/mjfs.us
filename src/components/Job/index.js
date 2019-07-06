@@ -1,8 +1,8 @@
 // @flow
-import * as React from "react"
+import * as React from 'react'
 
-import SmallText from "../../components/SmallText"
-import "./index.css"
+import SmallText from '../../components/SmallText'
+import './index.css'
 
 type Props = {
   title: string,
@@ -14,7 +14,7 @@ type Props = {
 class Experience extends React.PureComponent<Props> {
   listedBullets: Array<React.Element<string>>
 
-  constructor(props: Props) {
+  constructor (props: Props) {
     super(props)
 
     this.listedBullets = this.props.bullets.map((bullet, index) => (
@@ -22,11 +22,11 @@ class Experience extends React.PureComponent<Props> {
     ))
   }
 
-  render() {
+  render () {
     return (
-      <div className="job-container">
-        <div className="job-title">{this.props.title}</div>
-        <div className="job-company">{this.props.company}</div>
+      <div className='job-container'>
+        <div className='job-title'>{this.props.title}</div>
+        <div className='job-company'>{this.props.company}</div>
         <SmallText>{this.props.timeSpan}</SmallText>
         <ul>{this.listedBullets}</ul>
       </div>

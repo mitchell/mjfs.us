@@ -1,24 +1,24 @@
 // @flow
-import Home from "../components/Home"
-import Projects from "../containers/Projects"
-import Contact from "../components/Contact"
+import Home from '../screens/Home'
+import Projects from '../screens/Projects'
+import Contact from '../screens/Contact'
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
+    path: '/',
+    name: 'Home',
     component: Home,
     exact: true
   },
   {
-    path: "/projects",
-    name: "Projects",
+    path: '/projects',
+    name: 'Projects',
     component: Projects,
     exact: false
   },
   {
-    path: "/contact",
-    name: "Contact",
+    path: '/contact',
+    name: 'Contact',
     component: Contact,
     exact: false
   }
@@ -26,8 +26,8 @@ const routes = [
 
 const redirects = [
   {
-    path: "/linkedin",
-    func: () => (window.location = "https://linkedin.com/in/mitchelljfsimon")
+    path: '/linkedin',
+    func: () => (window.location = 'https://linkedin.com/in/mitchelljfsimon')
   }
 ]
 

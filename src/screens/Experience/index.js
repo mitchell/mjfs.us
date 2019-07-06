@@ -1,10 +1,10 @@
 // @flow
-import * as React from "react"
+import * as React from 'react'
 
-import "./index.css"
-import JobComponent from "../../components/Job"
+import './index.css'
+import JobComponent from '../../components/Job'
 
-import jobsData from "../../data/jobs.json"
+import jobsData from '../../data/jobs.json'
 
 type Props = {}
 
@@ -28,9 +28,9 @@ class Experience extends React.PureComponent<Props> {
     ))
   }
 
-  render() {
+  render () {
     return (
-      <div className="experience-container">{this.renderJobs(jobsData)}</div>
+      <div className='experience-container'>{this.renderJobs(jobsData)}</div>
     )
   }
 }

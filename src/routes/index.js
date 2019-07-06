@@ -1,8 +1,8 @@
 // @flow
-import React from "react"
-import { Route, Switch } from "react-router-dom"
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
 
-import { routes, redirects } from "./routes.js"
+import { routes, redirects } from './routes.js'
 
 type Props = {}
 
@@ -10,7 +10,7 @@ class Routes extends React.Component<Props> {
   routes: Array<Route>
   redirects: Array<Route>
 
-  constructor(props: Props) {
+  constructor (props: Props) {
     super(props)
 
     this.routes = routes.map(route => (
@@ -27,7 +27,7 @@ class Routes extends React.Component<Props> {
     ))
   }
 
-  render() {
+  render () {
     return (
       <Switch>
         {this.routes}

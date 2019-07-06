@@ -15,11 +15,12 @@ class Home extends React.PureComponent<Props> {
         <p>
           I am a software developer, with most of my experience in web services.
           More specifically, for the past year, I have been focused on Go web
-	  services with cloud-native architectures. Tech that I love working
-	  with includes Go, TypeScript, gRPC, Serverless, Docker, Redis, and
-	  PostgreSQL. Concepts that I am currently focused on are Docker
-	  containerization and orchestration, microservices software architecture
-	  w/ dependency injection, and infrastructure as code using Terraform.
+          services with cloud-native architectures. Tech that I love working
+          with includes Go, TypeScript, gRPC, Serverless, Docker, Redis, and
+          PostgreSQL. Concepts that I am currently focused on are Docker
+          containerization and orchestration, microservices software
+          architecture w/ dependency injection, and infrastructure as code using
+          Terraform.
         </p>
         <p>
           My professional interests, aside from the above, include software
