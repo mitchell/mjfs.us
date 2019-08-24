@@ -2,7 +2,7 @@
 import React from 'react'
 
 import './index.css'
-import profile from '../../images/profile.jpg'
+import profile from '../../images/profile.webp'
 
 type Props = {}
 
