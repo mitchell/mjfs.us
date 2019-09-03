@@ -37,7 +37,7 @@
         "alt": "Maintainability"
       }
     ],
-    "description": "This repository for this site. I've built and rebuilt my personal website in many technologies, but these days it is a simple TypeScript React SPA. Before using TS, I put Flow up to the same task and was pleasantly surprised, but ultimately won over in other projects by TS. This site is currently hosted on S3 and cached/distributed around the US by Cloudfront. This site is also continuously deployed using TravisCI."
+    "description": "The repository for this site. I've built and rebuilt my personal website in many technologies, but these days it is a simple TypeScript React SPA. Before using TS, I put Flow up to the same task and was pleasantly surprised, but ultimately won over in other projects by TS. This site is currently hosted on S3 and cached/distributed around the US by Cloudfront. This site is also continuously deployed using TravisCI."
   },
 
   {
