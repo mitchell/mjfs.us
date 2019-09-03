@@ -1,7 +1,7 @@
 import React, { PureComponent, ReactNode } from "react"
 
 import Job from "../../components/Job"
-import jobsData from "../../data/jobs.json"
+import jobs from "../../data/jobs.json"
 import "./index.css"
 
 type JobData = {
@@ -13,12 +13,10 @@ type JobData = {
 
 export default class Experience extends PureComponent {
   public render(): ReactNode {
-    return (
-      <div className="experience-container">{this.renderJobs(jobsData)}</div>
-    )
+    return <div className="experience-container">{this.renderJobs()}</div>
   }
 
-  private renderJobs(jobs: JobData[]): ReactNode[] {
+  private renderJobs(): ReactNode[] {
     return jobs.map((job: JobData) => (
       <Job
         key={job.title}

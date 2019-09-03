@@ -1,10 +1,8 @@
 import React, { PureComponent, ReactNode } from "react"
 
 import Project from "../../components/Project"
-
+import projects from "../../data/projects.json"
 import "./index.css"
-
-import projectsData from "../../data/projects.json"
 
 type BadgeData = {
   imgUrl: string
@@ -21,14 +19,10 @@ type ProjectData = {
 
 export default class Projects extends PureComponent {
   public render(): ReactNode {
-    return (
-      <div className="projects-container">
-        {this.renderProjects(projectsData)}
-      </div>
-    )
+    return <div className="projects-container">{this.renderProjects()}</div>
   }
 
-  private renderProjects(projects: ProjectData[]): ReactNode[] {
+  private renderProjects(): ReactNode[] {
     return projects.map((project: ProjectData) => (
       <Project
         key={project.title}
