@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import profile from "../../images/profile.webp"
+import profile from "../../images/profile.jpg"
 import "./index.css"
 
 export default class Home extends React.PureComponent {
