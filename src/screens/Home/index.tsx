@@ -1,16 +1,13 @@
-// @flow
-import React from 'react'
+import * as React from "react"
 
-import './index.css'
-import profile from '../../images/profile.webp'
+import profile from "../../images/profile.webp"
+import "./index.css"
 
-type Props = {}
-
-class Home extends React.PureComponent<Props> {
-  render () {
+export default class Home extends React.PureComponent {
+  public render() {
     return (
-      <div className='home-container'>
-        <img src={profile} alt='Profile' />
+      <div className="home-container">
+        <img src={profile} alt="Profile" />
         <p>Hello and welcome,</p>
         <p>
           I am a software developer, with most of my experience in web services.
@@ -32,10 +29,8 @@ class Home extends React.PureComponent<Props> {
           Thank you for reading my quick bio. If you would like to contact me
           visit the contact page for all of your options.
         </p>
-        <p className='signature'>- Mitchell J. F. Simon, III</p>
+        <p className="signature">- Mitchell J. F. Simon, III</p>
       </div>
     )
   }
 }
-
-export default Home
