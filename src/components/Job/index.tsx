@@ -21,6 +21,7 @@ export default class Experience extends React.PureComponent<Props> {
       </div>
     )
   }
+
   private renderBullets() {
     return this.props.bullets.map((bullet, index) => (
       <li key={index}>{bullet}</li>

@@ -14,6 +14,10 @@ class Navbar extends React.Component<{}, State> {
   constructor(props: {}) {
     super(props)
     this.state = { showMenu: !this.isMobile() }
+
+    this.toggleMenu = this.toggleMenu.bind(this)
+    this.renderButtons = this.renderButtons.bind(this)
+    this.closeMenu = this.closeMenu.bind(this)
   }
 
   public render() {
