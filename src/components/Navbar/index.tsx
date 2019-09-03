@@ -18,13 +18,23 @@ class Navbar extends React.Component<{}, State> {
     this.toggleMenu = this.toggleMenu.bind(this)
     this.renderButtons = this.renderButtons.bind(this)
     this.closeMenu = this.closeMenu.bind(this)
+    this.menuButton = this.menuButton.bind(this)
   }
 
   public render() {
-    let menuButton: JSX.Element | null = null
+    return (
+      <div className="navbar">
+        {this.menuButton()}
+        {this.state.showMenu && (
+          <div className="navbar-menu">{this.renderButtons()}</div>
+        )}
+      </div>
+    )
+  }
 
+  private menuButton() {
     if (this.isMobile()) {
-      menuButton = (
+      return (
         <div
           className={
             this.state.showMenu
@@ -38,14 +48,7 @@ class Navbar extends React.Component<{}, State> {
       )
     }
 
-    return (
-      <div className="navbar">
-        {menuButton}
-        {this.state.showMenu ? (
-          <div className="navbar-menu">{this.renderButtons()}</div>
-        ) : null}
-      </div>
-    )
+    return null
   }
 
   private isMobile() {
