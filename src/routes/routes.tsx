@@ -1,6 +1,19 @@
+import { ComponentClass, ReactNode } from "react"
 import Contact from "../screens/Contact"
 import Home from "../screens/Home"
 import Projects from "../screens/Projects"
+
+export type Route = {
+  component: ComponentClass
+  exact: boolean
+  name: string
+  path: string
+}
+
+export type Redirect = {
+  func: () => ReactNode
+  path: string
+}
 
 export const routes = [
   {
@@ -25,7 +38,7 @@ export const routes = [
 
 export const redirects = [
   {
-    func: () => {
+    func: (): ReactNode => {
       window.location.replace("https://linkedin.com/in/mitchelljfsimon")
       return null
     },

@@ -1,5 +1,4 @@
-// @flow
-import * as React from "react"
+import React, { PureComponent, ReactNode } from "react"
 
 import Project from "../../components/Project"
 
@@ -20,8 +19,8 @@ type ProjectData = {
   description: string
 }
 
-export default class Projects extends React.PureComponent {
-  public render() {
+export default class Projects extends PureComponent {
+  public render(): ReactNode {
     return (
       <div className="projects-container">
         {this.renderProjects(projectsData)}
@@ -29,8 +28,8 @@ export default class Projects extends React.PureComponent {
     )
   }
 
-  private renderProjects(projects: ProjectData[]) {
-    return projects.map(project => (
+  private renderProjects(projects: ProjectData[]): ReactNode[] {
+    return projects.map((project: ProjectData) => (
       <Project
         key={project.title}
         title={project.title}

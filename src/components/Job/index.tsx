@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { PureComponent, ReactNode } from "react"
 
 import SmallText from "../../components/SmallText"
 import "./index.css"
@@ -10,8 +10,8 @@ type Props = {
   bullets: string[]
 }
 
-export default class Experience extends React.PureComponent<Props> {
-  public render() {
+export default class Experience extends PureComponent<Props> {
+  public render(): ReactNode {
     return (
       <div className="job-container">
         <div className="job-title">{this.props.title}</div>
@@ -22,8 +22,8 @@ export default class Experience extends React.PureComponent<Props> {
     )
   }
 
-  private renderBullets() {
-    return this.props.bullets.map((bullet, index) => (
+  private renderBullets(): ReactNode[] {
+    return this.props.bullets.map((bullet: string, index: number) => (
       <li key={index}>{bullet}</li>
     ))
   }

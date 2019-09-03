@@ -1,4 +1,4 @@
-import React from "react"
+import React, { PureComponent, ReactNode } from "react"
 
 import "./index.css"
 
@@ -7,8 +7,8 @@ type Props = {
   children: string
 }
 
-export default class ClearButton extends React.PureComponent<Props> {
-  public render() {
+export default class ClearButton extends PureComponent<Props> {
+  public render(): ReactNode {
     return (
       <a className="clear-button" href={this.props.href}>
         {this.props.children}

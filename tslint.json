@@ -2,8 +2,21 @@
   "extends": ["tslint:latest", "tslint-config-prettier"],
   "defaultSeverity": "warning",
   "rules": {
+    "no-any": true,
+    "no-unsafe-any": true,
+    "no-magic-numbers": true,
+    "no-console": true,
+    "cyclomatic-complexity": [true, 10],
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "parameter",
+      "arrow-parameter",
+      "property-declaration",
+      "member-variable-declaration"
+    ],
     "semicolon": false,
-    "resolve-json-module": true,
     "interface-over-type-literal": false
   },
   "linterOptions": {

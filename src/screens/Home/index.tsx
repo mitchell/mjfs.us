@@ -1,10 +1,10 @@
-import * as React from "react"
+import React, { PureComponent, ReactNode } from "react"
 
 import profile from "../../images/profile.jpg"
 import "./index.css"
 
-export default class Home extends React.PureComponent {
-  public render() {
+export default class Home extends PureComponent {
+  public render(): ReactNode {
     return (
       <div className="home-container">
         <img src={profile} alt="Profile" />

@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { PureComponent, ReactNode } from "react"
 
 import ClearButton from "../../components/ClearButton"
 
@@ -17,8 +17,8 @@ type Props = {
   badges: Badge[]
 }
 
-export default class Project extends React.PureComponent<Props> {
-  public render() {
+export default class Project extends PureComponent<Props> {
+  public render(): ReactNode {
     return (
       <div className="project-container">
         <h4>{this.props.title}</h4>
@@ -29,8 +29,8 @@ export default class Project extends React.PureComponent<Props> {
     )
   }
 
-  private renderBadges(badges: Badge[]) {
-    return this.props.badges.map((badge, index) => (
+  private renderBadges(badges: Badge[]): ReactNode[] {
+    return badges.map((badge: Badge, index: number) => (
       <a className="project-badge" href={badge.linkUrl} key={index}>
         <img src={badge.imgUrl} alt={badge.alt} />
       </a>

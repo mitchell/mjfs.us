@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { PureComponent, ReactNode } from "react"
 
 import Job from "../../components/Job"
 import jobsData from "../../data/jobs.json"
@@ -11,15 +11,15 @@ type JobData = {
   bullets: string[]
 }
 
-export default class Experience extends React.PureComponent {
-  public render() {
+export default class Experience extends PureComponent {
+  public render(): ReactNode {
     return (
       <div className="experience-container">{this.renderJobs(jobsData)}</div>
     )
   }
 
-  private renderJobs(jobs: JobData[]) {
-    return jobs.map(job => (
+  private renderJobs(jobs: JobData[]): ReactNode[] {
+    return jobs.map((job: JobData) => (
       <Job
         key={job.title}
         title={job.title}

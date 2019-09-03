@@ -1,16 +1,16 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import * as React from "react"
+import React, { Component, ReactNode } from "react"
 import { NavLink } from "react-router-dom"
 
-import { routes } from "../../routes/routes"
+import { Route, routes } from "../../routes/routes"
 import "./index.css"
 
 type State = {
   showMenu: boolean
 }
 
-class Navbar extends React.Component<{}, State> {
+export default class Navbar extends Component<{}, State> {
   constructor(props: {}) {
     super(props)
     this.state = { showMenu: !this.isMobile() }
@@ -21,7 +21,7 @@ class Navbar extends React.Component<{}, State> {
     this.menuButton = this.menuButton.bind(this)
   }
 
-  public render() {
+  public render(): ReactNode {
     return (
       <div className="navbar">
         {this.menuButton()}
@@ -32,7 +32,7 @@ class Navbar extends React.Component<{}, State> {
     )
   }
 
-  private menuButton() {
+  private menuButton(): ReactNode {
     if (this.isMobile()) {
       return (
         <div
@@ -51,19 +51,19 @@ class Navbar extends React.Component<{}, State> {
     return null
   }
 
-  private isMobile() {
+  private isMobile(): boolean {
     const mobileMenuMaximum = 800
     return window.innerWidth <= mobileMenuMaximum
   }
 
-  private toggleMenu() {
+  private toggleMenu(): void {
     if (this.isMobile() || !this.state.showMenu) {
-      this.setState(prev => ({ showMenu: !prev.showMenu }))
+      this.setState((prev: State) => ({ showMenu: !prev.showMenu }))
     }
   }
 
-  private renderButtons() {
-    return routes.map(route => (
+  private renderButtons(): ReactNode {
+    return routes.map((route: Route) => (
       <NavLink
         key={route.name}
         className="navbar-menu-button"
@@ -77,12 +77,10 @@ class Navbar extends React.Component<{}, State> {
     ))
   }
 
-  private closeMenu() {
+  private closeMenu(): void {
     window.scrollTo(0, 0)
     if (this.isMobile()) {
       this.setState({ showMenu: false })
     }
   }
 }
-
-export default Navbar

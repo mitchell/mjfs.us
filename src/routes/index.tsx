@@ -1,10 +1,10 @@
-import React from "react"
-import { Route, Switch } from "react-router-dom"
+import React, { Component, ReactNode } from "react"
+import { Route as RouteComponent, Switch } from "react-router-dom"
 
-import { redirects, routes } from "./routes"
+import { Redirect, redirects, Route, routes } from "./routes"
 
-export default class Routes extends React.Component {
-  public render() {
+export default class Routes extends Component {
+  public render(): ReactNode {
     return (
       <Switch>
         {this.renderRoutes()}
@@ -13,9 +13,9 @@ export default class Routes extends React.Component {
     )
   }
 
-  private renderRoutes() {
-    return routes.map(route => (
-      <Route
+  private renderRoutes(): ReactNode[] {
+    return routes.map((route: Route) => (
+      <RouteComponent
         key={route.name}
         exact={route.exact}
         path={route.path}
@@ -24,9 +24,9 @@ export default class Routes extends React.Component {
     ))
   }
 
-  private renderRedirects() {
-    return redirects.map(route => (
-      <Route key={route.path} path={route.path} render={route.func} />
+  private renderRedirects(): ReactNode[] {
+    return redirects.map((route: Redirect) => (
+      <RouteComponent key={route.path} path={route.path} render={route.func} />
     ))
   }
 }
