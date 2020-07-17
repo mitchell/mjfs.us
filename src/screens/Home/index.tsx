@@ -11,21 +11,21 @@ export default class Home extends PureComponent {
 
         <p>Hello and welcome,</p>
         <p>
-          I am a software and dev-ops engineer, with most of my experience in
-          web services, web apps, and mobile apps. I've designed, developed, and
-          deployed mission critical web infrastructure and UI features for each
-          company I've worked with. I love to architect and automate software
-          projects. Tech that I love working with includes Elixir, Go,
-          TypeScript, gRPC, Docker, and Terraform.
+          I am a software and dev-ops engineer with a focus on web services and
+          applications. I love to architect and automate software projects. At
+          each company I've been with, I've designed and deployed mission
+          critical features and infrastructure. Throughout these experiences
+          I've served as a mentor, team leader, and architectural guide.
         </p>
         <p>
-          My professional interests, aside from the above, include operating
-          systems, virtualization, business development, and startup finance. My
-          personal interests include music, skiing, camping, and travel.
+          Tech that I love working with includes Elixir, Go, and most HashiCorp
+          tools. My other professional interests include operating systems,
+          virtualization, business development, and startup finance. My personal
+          interests include skiing, music, and travel.
         </p>
         <p>Thanks for reading.</p>
 
-        <p className="signature">- Mitchell J. F. Simon, III</p>
+        <p className="signature">- Mitchell JF Simon, III</p>
       </div>
     )
   }

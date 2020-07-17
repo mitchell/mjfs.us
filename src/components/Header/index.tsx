@@ -8,13 +8,8 @@ export default class Header extends PureComponent {
   public render(): ReactNode {
     return (
       <div className="header-container">
-        <h2>Mitchell J. F. Simon</h2>
-        <SmallText>
-          Software engineer;&nbsp;
-          <span style={{ display: "inline-block" }}>
-            cloud-native web services and clients
-          </span>
-        </SmallText>
+        <h2>Mitchell JF Simon</h2>
+        <SmallText>Software & DevOps Engineer</SmallText>
       </div>
     )
   }
